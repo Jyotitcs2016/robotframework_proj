@@ -6,6 +6,8 @@ Library           SeleniumLibrary
 *** Test Cases ***
 reg_loginstore
     Element Text Should Be    css:h1.currentStatusUserName>a    JyotiPrakash Panda
+    Input Text    css:input#phSearchInput    Spencer Clarey
+    Click Button    css:div#searchButtonContainer>input
 
 *** Keywords ***
 loginSFDC
