@@ -8,6 +8,8 @@ reg_loginstore
     Element Text Should Be    css:h1.currentStatusUserName>a    JyotiPrakash Panda
     Input Text    css:input#phSearchInput    Spencer Clarey
     Click Button    css:div#searchButtonContainer>input
+    Click Element    css:td.dataCell>a:contains("JCI Corporate General Account")
+    Click Element    css:div.pShowMore a:contains("Go to list (55+) »")
 
 *** Keywords ***
 loginSFDC

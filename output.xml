@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190818 10:43:33.349" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<robot rpa="false" generated="20190818 11:59:13.828" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
 <suite source="C:\Users\JPP\Documents\Testing\Robot\SFDC_Reg.robot" id="s1" name="SFDC Reg">
 <kw type="setup" name="loginSFDC">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,8 +8,8 @@
 <arg>https://test.salesforce.com</arg>
 <arg>gc</arg>
 </arguments>
-<msg timestamp="20190818 10:43:38.395" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
-<status status="PASS" endtime="20190818 10:44:25.878" starttime="20190818 10:43:38.395"></status>
+<msg timestamp="20190818 11:59:19.864" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190818 11:59:59.649" starttime="20190818 11:59:19.863"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -17,8 +17,8 @@
 <arg>css:input#username</arg>
 <arg>jyotiprakash.panda-ext@jci.com</arg>
 </arguments>
-<msg timestamp="20190818 10:44:25.879" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
-<status status="PASS" endtime="20190818 10:44:26.824" starttime="20190818 10:44:25.879"></status>
+<msg timestamp="20190818 11:59:59.650" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
+<status status="PASS" endtime="20190818 12:00:00.527" starttime="20190818 11:59:59.650"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
@@ -26,18 +26,18 @@
 <arg>css:input#password</arg>
 <arg>Jyoti@1995</arg>
 </arguments>
-<msg timestamp="20190818 10:44:26.824" level="INFO">Typing password into text field 'css:input#password'.</msg>
-<status status="PASS" endtime="20190818 10:44:27.283" starttime="20190818 10:44:26.824"></status>
+<msg timestamp="20190818 12:00:00.528" level="INFO">Typing password into text field 'css:input#password'.</msg>
+<status status="PASS" endtime="20190818 12:00:00.836" starttime="20190818 12:00:00.527"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>css:input#Login</arg>
 </arguments>
-<msg timestamp="20190818 10:44:27.284" level="INFO">Clicking button 'css:input#Login'.</msg>
-<status status="PASS" endtime="20190818 10:44:54.352" starttime="20190818 10:44:27.283"></status>
+<msg timestamp="20190818 12:00:00.837" level="INFO">Clicking button 'css:input#Login'.</msg>
+<status status="PASS" endtime="20190818 12:00:45.968" starttime="20190818 12:00:00.837"></status>
 </kw>
-<status status="PASS" endtime="20190818 10:44:54.352" starttime="20190818 10:43:38.394"></status>
+<status status="PASS" endtime="20190818 12:00:45.969" starttime="20190818 11:59:19.862"></status>
 </kw>
 <test id="s1-t1" name="reg_loginstore">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
@@ -46,8 +46,8 @@
 <arg>css:h1.currentStatusUserName&gt;a</arg>
 <arg>JyotiPrakash Panda</arg>
 </arguments>
-<msg timestamp="20190818 10:44:54.355" level="INFO">Verifying element 'css:h1.currentStatusUserName&gt;a' contains exact text 'JyotiPrakash Panda'.</msg>
-<status status="PASS" endtime="20190818 10:44:54.424" starttime="20190818 10:44:54.354"></status>
+<msg timestamp="20190818 12:00:45.971" level="INFO">Verifying element 'css:h1.currentStatusUserName&gt;a' contains exact text 'JyotiPrakash Panda'.</msg>
+<status status="PASS" endtime="20190818 12:00:46.041" starttime="20190818 12:00:45.971"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -55,24 +55,24 @@
 <arg>css:input#phSearchInput</arg>
 <arg>Spencer Clarey</arg>
 </arguments>
-<msg timestamp="20190818 10:44:54.425" level="INFO">Typing text 'Spencer Clarey' into text field 'css:input#phSearchInput'.</msg>
-<status status="PASS" endtime="20190818 10:44:54.954" starttime="20190818 10:44:54.424"></status>
+<msg timestamp="20190818 12:00:46.042" level="INFO">Typing text 'Spencer Clarey' into text field 'css:input#phSearchInput'.</msg>
+<status status="PASS" endtime="20190818 12:00:46.751" starttime="20190818 12:00:46.042"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>css:div#searchButtonContainer&gt;input</arg>
 </arguments>
-<msg timestamp="20190818 10:44:54.956" level="INFO">Clicking button 'css:div#searchButtonContainer&gt;input'.</msg>
-<status status="PASS" endtime="20190818 10:44:59.299" starttime="20190818 10:44:54.955"></status>
+<msg timestamp="20190818 12:00:46.752" level="INFO">Clicking button 'css:div#searchButtonContainer&gt;input'.</msg>
+<status status="PASS" endtime="20190818 12:00:53.194" starttime="20190818 12:00:46.751"></status>
 </kw>
-<status status="PASS" endtime="20190818 10:44:59.300" critical="yes" starttime="20190818 10:44:54.352"></status>
+<status status="PASS" endtime="20190818 12:00:53.195" critical="yes" starttime="20190818 12:00:45.969"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20190818 10:45:02.737" starttime="20190818 10:44:59.302"></status>
+<status status="PASS" endtime="20190818 12:00:56.364" starttime="20190818 12:00:53.198"></status>
 </kw>
-<status status="PASS" endtime="20190818 10:45:02.737" starttime="20190818 10:43:33.355"></status>
+<status status="PASS" endtime="20190818 12:00:56.364" starttime="20190818 11:59:13.835"></status>
 </suite>
 <statistics>
 <total>
