@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190819 21:51:31.662" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<robot rpa="false" generated="20190820 13:34:40.866" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
 <suite source="C:\Users\JPP\Documents\Testing\Robot\SFDC_Reg.robot" id="s1" name="SFDC Reg">
 <kw type="setup" name="loginSFDC">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,8 +8,8 @@
 <arg>https://test.salesforce.com</arg>
 <arg>gc</arg>
 </arguments>
-<msg timestamp="20190819 21:51:35.831" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
-<status status="PASS" endtime="20190819 21:52:03.906" starttime="20190819 21:51:35.830"></status>
+<msg timestamp="20190820 13:34:47.845" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190820 13:36:00.656" starttime="20190820 13:34:47.845"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -17,8 +17,8 @@
 <arg>css:input#username</arg>
 <arg>jyotiprakash.panda-ext@jci.com</arg>
 </arguments>
-<msg timestamp="20190819 21:52:03.907" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
-<status status="PASS" endtime="20190819 21:52:05.221" starttime="20190819 21:52:03.907"></status>
+<msg timestamp="20190820 13:36:00.657" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
+<status status="PASS" endtime="20190820 13:36:01.526" starttime="20190820 13:36:00.656"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
@@ -26,18 +26,18 @@
 <arg>css:input#password</arg>
 <arg>Jyoti@1995</arg>
 </arguments>
-<msg timestamp="20190819 21:52:05.222" level="INFO">Typing password into text field 'css:input#password'.</msg>
-<status status="PASS" endtime="20190819 21:52:05.556" starttime="20190819 21:52:05.222"></status>
+<msg timestamp="20190820 13:36:01.527" level="INFO">Typing password into text field 'css:input#password'.</msg>
+<status status="PASS" endtime="20190820 13:36:01.835" starttime="20190820 13:36:01.526"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>css:input#Login</arg>
 </arguments>
-<msg timestamp="20190819 21:52:05.557" level="INFO">Clicking button 'css:input#Login'.</msg>
-<status status="PASS" endtime="20190819 21:52:31.953" starttime="20190819 21:52:05.556"></status>
+<msg timestamp="20190820 13:36:01.837" level="INFO">Clicking button 'css:input#Login'.</msg>
+<status status="PASS" endtime="20190820 13:36:35.506" starttime="20190820 13:36:01.836"></status>
 </kw>
-<status status="PASS" endtime="20190819 21:52:31.953" starttime="20190819 21:51:35.829"></status>
+<status status="PASS" endtime="20190820 13:36:35.506" starttime="20190820 13:34:47.843"></status>
 </kw>
 <test id="s1-t1" name="reg_loginstore">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
@@ -46,50 +46,123 @@
 <arg>css:h1.currentStatusUserName&gt;a</arg>
 <arg>JyotiPrakash Panda</arg>
 </arguments>
-<msg timestamp="20190819 21:52:31.956" level="INFO">Verifying element 'css:h1.currentStatusUserName&gt;a' contains exact text 'JyotiPrakash Panda'.</msg>
-<status status="PASS" endtime="20190819 21:52:32.077" starttime="20190819 21:52:31.955"></status>
+<msg timestamp="20190820 13:36:35.509" level="INFO">Verifying element 'css:h1.currentStatusUserName&gt;a' contains exact text 'JyotiPrakash Panda'.</msg>
+<status status="PASS" endtime="20190820 13:36:35.566" starttime="20190820 13:36:35.508"></status>
 </kw>
+<kw name="loginStorefront">
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
 <arg>css:input#phSearchInput</arg>
-<arg>Spencer Clarey</arg>
+<arg>${account_type}</arg>
 </arguments>
-<msg timestamp="20190819 21:52:32.078" level="INFO">Typing text 'Spencer Clarey' into text field 'css:input#phSearchInput'.</msg>
-<status status="PASS" endtime="20190819 21:52:32.650" starttime="20190819 21:52:32.077"></status>
+<msg timestamp="20190820 13:36:35.567" level="INFO">Typing text 'JCI Corporate General Account' into text field 'css:input#phSearchInput'.</msg>
+<status status="PASS" endtime="20190820 13:36:36.431" starttime="20190820 13:36:35.567"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>css:div#searchButtonContainer&gt;input</arg>
 </arguments>
-<msg timestamp="20190819 21:52:32.651" level="INFO">Clicking button 'css:div#searchButtonContainer&gt;input'.</msg>
-<status status="PASS" endtime="20190819 21:52:36.597" starttime="20190819 21:52:32.651"></status>
+<msg timestamp="20190820 13:36:36.432" level="INFO">Clicking button 'css:div#searchButtonContainer&gt;input'.</msg>
+<status status="PASS" endtime="20190820 13:36:39.348" starttime="20190820 13:36:36.431"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
-<msg timestamp="20190819 21:52:36.598" level="FAIL">Keyword 'SeleniumLibrary.Click Element' expected 1 to 2 arguments, got 0.</msg>
-<status status="FAIL" endtime="20190819 21:52:36.598" starttime="20190819 21:52:36.597"></status>
+<arguments>
+<arg>xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]</arg>
+</arguments>
+<msg timestamp="20190820 13:36:39.348" level="INFO">Clicking element 'xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]'.</msg>
+<status status="PASS" endtime="20190820 13:36:43.366" starttime="20190820 13:36:39.348"></status>
 </kw>
-<status status="FAIL" endtime="20190819 21:52:36.598" critical="yes" starttime="20190819 21:52:31.954">Keyword 'SeleniumLibrary.Click Element' expected 1 to 2 arguments, got 0.</status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="001G000001zNoUG_RelatedContactList_body"]/div/a[2]</arg>
+</arguments>
+<msg timestamp="20190820 13:36:43.366" level="INFO">Clicking element 'xpath://*[@id="001G000001zNoUG_RelatedContactList_body"]/div/a[2]'.</msg>
+<status status="PASS" endtime="20190820 13:36:46.279" starttime="20190820 13:36:43.366"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@class='listElementBottomNav']//span[@class='listItemPad'][contains(text(),'C')]</arg>
+</arguments>
+<msg timestamp="20190820 13:36:46.280" level="INFO">Clicking element 'xpath://div[@class='listElementBottomNav']//span[@class='listItemPad'][contains(text(),'C')]'.</msg>
+<status status="PASS" endtime="20190820 13:36:47.826" starttime="20190820 13:36:46.280"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[contains(text(),'Clarey, Spencer')]</arg>
+</arguments>
+<msg timestamp="20190820 13:36:47.827" level="INFO">Clicking element 'xpath://a[contains(text(),'Clarey, Spencer')]'.</msg>
+<status status="PASS" endtime="20190820 13:36:55.230" starttime="20190820 13:36:47.826"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='workWithPortalButton']</arg>
+</arguments>
+<msg timestamp="20190820 13:36:55.231" level="INFO">Clicking element 'xpath://div[@id='workWithPortalButton']'.</msg>
+<status status="PASS" endtime="20190820 13:36:55.512" starttime="20190820 13:36:55.230"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='workWithPortalMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]</arg>
+</arguments>
+<msg timestamp="20190820 13:36:55.513" level="INFO">Clicking element 'xpath://div[@id='workWithPortalMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]'.</msg>
+<status status="PASS" endtime="20190820 13:36:56.363" starttime="20190820 13:36:55.512"></status>
+</kw>
+<kw name="Select From List" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 3.2.* Use `Select From List By Label/Value/Index` instead.</doc>
+<arguments>
+<arg>xpath://select[@id='portalUserLoginAsSelect']</arg>
+<arg>Order Navigator</arg>
+</arguments>
+<msg timestamp="20190820 13:36:56.364" level="WARN">Keyword 'SeleniumLibrary.Select From List' is deprecated. Use `Select From List By Label/Value/Index` instead.</msg>
+<msg timestamp="20190820 13:36:56.364" level="INFO">Selecting option(s) 'Order Navigator' from list 'xpath://select[@id='portalUserLoginAsSelect']'.</msg>
+<status status="PASS" endtime="20190820 13:36:56.647" starttime="20190820 13:36:56.363"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='loginAsPortalUserOverlayDialog']//div[@class='middle']//input[1]</arg>
+</arguments>
+<msg timestamp="20190820 13:36:56.648" level="INFO">Clicking element 'xpath://div[@id='loginAsPortalUserOverlayDialog']//div[@class='middle']//input[1]'.</msg>
+<status status="PASS" endtime="20190820 13:37:03.540" starttime="20190820 13:36:56.648"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[contains(text(),'Ducted Residential &amp; Commercial Systems, Ductless')]</arg>
+</arguments>
+<msg timestamp="20190820 13:37:03.541" level="INFO">Clicking element 'xpath://a[contains(text(),'Ducted Residential &amp; Commercial Systems, Ductless')]'.</msg>
+<status status="PASS" endtime="20190820 13:37:14.412" starttime="20190820 13:37:03.540"></status>
+</kw>
+<status status="PASS" endtime="20190820 13:37:14.413" starttime="20190820 13:36:35.566"></status>
+</kw>
+<status status="PASS" endtime="20190820 13:37:14.414" critical="yes" starttime="20190820 13:36:35.506"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20190819 21:52:40.227" starttime="20190819 21:52:36.601"></status>
+<status status="PASS" endtime="20190820 13:37:18.349" starttime="20190820 13:37:14.417"></status>
 </kw>
-<status status="FAIL" endtime="20190819 21:52:40.227" starttime="20190819 21:51:31.667"></status>
+<status status="PASS" endtime="20190820 13:37:18.350" starttime="20190820 13:34:40.873"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="SFDC Reg" pass="0">SFDC Reg</stat>
+<stat fail="0" id="s1" name="SFDC Reg" pass="1">SFDC Reg</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20190820 13:36:56.364" level="WARN">Keyword 'SeleniumLibrary.Select From List' is deprecated. Use `Select From List By Label/Value/Index` instead.</msg>
 </errors>
 </robot>
