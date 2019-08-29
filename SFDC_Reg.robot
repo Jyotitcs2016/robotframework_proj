@@ -1,5 +1,5 @@
 *** Settings ***
-Suite Setup       loginSFDC
+Suite Setup       loginSFDC    ie
 Suite Teardown    Close All Browsers
 Library           SeleniumLibrary
 
@@ -35,24 +35,25 @@ reg_categorycheck_Controls
     loginStorefront    Controls Parts Store
     Sleep    2s
     : FOR    ${tab}    IN    @{controls_cat}
-    \    sleep    2s
+    \    Wait Until Element Is Enabled    ${tab}    timeout=none
     \    Click Link    ${tab}
     \    Scroll Element Into View    xpath://input[@id='viewcartbutton']
-    \    Wait Until Element Is Visible    xpath://input[@id='viewcartbutton']
     \    Capture Page Screenshot
-    END
 
 *** Keywords ***
 loginSFDC
-    Open Browser    https://test.salesforce.com    gc
+    [Arguments]    ${browser}
+    Open Browser    https://test.salesforce.com    ${browser}
     Maximize Browser Window
     Set Browser Implicit Wait    20s
     Input Text    css:input#username    jyotiprakash.panda-ext@jci.com
     Input Password    css:input#password    Jyoti@1995
+    Wait Until Element Is Enabled    css:input#Login
     Click Button    css:input#Login
 
 loginStorefront
     [Arguments]    ${storefront}
+    Wait Until Element Is Visible    css:input#phSearchInput
     Input Text    css:input#phSearchInput    ${account_type}
     Click Button    css:div#searchButtonContainer>input
     Click Element    xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]
