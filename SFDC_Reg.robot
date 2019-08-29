@@ -14,16 +14,33 @@ ${element3}       //*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i
 ${element4}       //*[@id="a8d4A0000008pOiQAI"]/h5/span/span/i
 @{cat3}           Air Conditioners / Split Systems    Air Handling Units (AHUs)    Coils    Gas Furnaces    Heat Pumps    Rooftop Units
 @{cat4}           Aftermarket Parts    Commercial Parts    Residential Parts
+${outputdir}      C://Users//JPP//Documents//Testing//Robot//screenshots//
+@{controls_cat}    Actuators    Air Flow Level Switches    Air Quality Sensors    Airflow Measuring Stations    Current Switches and Relays    Dampers    Empty Enclosures
+...               Engines & Controllers    Lighting Control Panels    Power Devices    Pressure Sensors    Pressure Switches    Refrigeration Controls    Room Pressure Monitors
+...               Security Devices    Standard Panels    Starters    Temperature and Humidity Sensors    Temperature Switches    Thermostats    Valves
+...               Variable Speed Drives    Verasys Controls    Water Flow Sensors    Miscellaneous    # All catagories of Controls store
 
 *** Test Cases ***
-reg_loginstore
-    Wait Until Element Contains    css:h1.currentStatusUserName>a    JyotiPrakash Panda
-    loginStorefront
+reg_categorycheck_UPG
+    [Tags]    UPG
+    loginStorefront    Ducted Residential & Commercial Systems, Ductless Systems & Source 1 Parts Store
     Sleep    5s
     loopFOR    ${element1}    @{cat1}
     loopFOR    ${element2}    @{cat2}
     loopFOR    ${element3}    @{cat3}
     loopFOR    ${element4}    @{cat4}
+
+reg_categorycheck_Controls
+    [Tags]    controls
+    loginStorefront    Controls Parts Store
+    Sleep    2s
+    : FOR    ${tab}    IN    @{controls_cat}
+    \    sleep    2s
+    \    Click Link    ${tab}
+    \    Scroll Element Into View    xpath://input[@id='viewcartbutton']
+    \    Wait Until Element Is Visible    xpath://input[@id='viewcartbutton']
+    \    Capture Page Screenshot
+    END
 
 *** Keywords ***
 loginSFDC
@@ -35,6 +52,7 @@ loginSFDC
     Click Button    css:input#Login
 
 loginStorefront
+    [Arguments]    ${storefront}
     Input Text    css:input#phSearchInput    ${account_type}
     Click Button    css:div#searchButtonContainer>input
     Click Element    xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]
@@ -42,13 +60,13 @@ loginStorefront
     Click Element    xpath://div[@class='listElementBottomNav']//span[@class='listItemPad'][contains(text(),'C')]
     Click Element    xpath://a[contains(text(),'Clarey, Spencer')]
     Sleep    2s
-    Click Element    css:#workWithPortalLabel
-    Sleep    4s
+    Click Element    id:workWithPortalButton
+    Sleep    2s
     Click Link    Log in to Community as User
     sleep    3s
-    Select From List    xpath://select[@id='portalUserLoginAsSelect']    Order Navigator
+    Select From List By Label    xpath://select[@id='portalUserLoginAsSelect']    Order Navigator
     Click Element    xpath://div[@id='loginAsPortalUserOverlayDialog']//div[@class='middle']//input[1]
-    Click Element    xpath://a[contains(text(),'Ducted Residential & Commercial Systems, Ductless')]
+    Click Link    ${storefront}
 
 loopFOR
     [Arguments]    ${element}    @{cat}
@@ -61,4 +79,3 @@ loopFOR
     \    Scroll Element Into View    css:#viewcartbutton
     \    Sleep    10s
     \    Capture Page Screenshot
-    END
