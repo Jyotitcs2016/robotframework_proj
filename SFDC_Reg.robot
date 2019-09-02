@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation     SFDC Regression
 Suite Setup       loginSFDC    gc
 Suite Teardown    Close All Browsers
 Library           SeleniumLibrary
@@ -75,7 +76,7 @@ loopFOR
     \    Click Link    ${subcat}
     \    Sleep    2s
     \    Wait Until Element Is Visible    xpath://button[@id='cc_sort_name_dropdown']
-    \    js_script    (0,500)
+    \    js_script    (0,400)
     \    Sleep    10s
     \    Capture Page Screenshot
 
