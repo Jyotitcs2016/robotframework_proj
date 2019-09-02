@@ -1,27 +1,16 @@
 *** Settings ***
-Suite Setup       loginSFDC    ie
+Suite Setup       loginSFDC    gc
 Suite Teardown    Close All Browsers
 Library           SeleniumLibrary
+Resource          ${CURDIR}/locators_file.robot
 
 *** Variables ***
-${account_type}    JCI Corporate General Account
-@{cat1}           Controls and Accessories    Indoor Units    Multi Zone    Outdoor Units/Outdoor Mini VRF    Single Zone
-${subcat}         \    # empty
-@{cat2}           Commercial Split System Heat Pumps    Commercial Split Systems    Packaged Heat Pumps    Packaged Rooftop Units
-${element1}       //*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i
-${element2}       //*[@id="a8d4A0000008pOgQAI"]/h5/span/span/i
-${element3}       //*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i
-${element4}       //*[@id="a8d4A0000008pOiQAI"]/h5/span/span/i
-@{cat3}           Air Conditioners / Split Systems    Air Handling Units (AHUs)    Coils    Gas Furnaces    Heat Pumps    Rooftop Units
-@{cat4}           Aftermarket Parts    Commercial Parts    Residential Parts
-${outputdir}      C://Users//JPP//Documents//Testing//Robot//screenshots//
-@{controls_cat}    Actuators    Air Flow Level Switches    Air Quality Sensors    Airflow Measuring Stations    Current Switches and Relays    Dampers    Empty Enclosures
-...               Engines & Controllers    Lighting Control Panels    Power Devices    Pressure Sensors    Pressure Switches    Refrigeration Controls    Room Pressure Monitors
-...               Security Devices    Standard Panels    Starters    Temperature and Humidity Sensors    Temperature Switches    Thermostats    Valves
-...               Variable Speed Drives    Verasys Controls    Water Flow Sensors    Miscellaneous    # All catagories of Controls store
 
 *** Test Cases ***
 reg_categorycheck_UPG
+    [Documentation]    Step1 -As a user logged in to UPG store
+    ...    Step2-User click on Catagory trees one by one
+    ...    Step3-User click on each Filters for PLP list items one by one
     [Tags]    UPG
     loginStorefront    Ducted Residential & Commercial Systems, Ductless Systems & Source 1 Parts Store
     Sleep    5s
@@ -31,42 +20,50 @@ reg_categorycheck_UPG
     loopFOR    ${element4}    @{cat4}
 
 reg_categorycheck_Controls
+    [Documentation]    Step1 -As a user logged in to Controls store
+    ...    Step2-User click on Catagory trees one by one
+    ...    Step3-User click on each Filters for PLP list items one by one
     [Tags]    controls
     loginStorefront    Controls Parts Store
     Sleep    2s
-    : FOR    ${tab}    IN    @{controls_cat}
-    \    Wait Until Element Is Enabled    ${tab}    timeout=none
-    \    Click Link    ${tab}
-    \    Scroll Element Into View    xpath://input[@id='viewcartbutton']
-    \    Capture Page Screenshot
+    loopThroughCats    (0,2500)
+
+js_use
+    ${Get Vertical Position}    Get Vertical Position    xpath://img[@id='01aG0000001OjLJImg']
+    ${Get horizontal Position}    Get Horizontal Position    xpath://img[@id='01aG0000001OjLJImg']
+    Log    vertical ${Get Vertical Position} pixels,horizon ${Get horizontal Position} pixels
+    js_script
+    sleep    5s
 
 *** Keywords ***
 loginSFDC
     [Arguments]    ${browser}
-    Open Browser    https://test.salesforce.com    ${browser}
+    Open Browser    ${URL}    ${browser}
     Maximize Browser Window
     Set Browser Implicit Wait    20s
-    Input Text    css:input#username    jyotiprakash.panda-ext@jci.com
-    Input Password    css:input#password    Jyoti@1995
+    Input Text    css:input#username    ${username}
+    Input Password    css:input#password    ${password}
     Wait Until Element Is Enabled    css:input#Login
     Click Button    css:input#Login
 
 loginStorefront
     [Arguments]    ${storefront}
-    Wait Until Element Is Visible    css:input#phSearchInput
-    Input Text    css:input#phSearchInput    ${account_type}
+    Wait Until Element Is Visible    xpath://input[@id='phSearchInput']
+    Input Text    xpath://input[@id='phSearchInput']    ${account_type}
     Click Button    css:div#searchButtonContainer>input
     Click Element    xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]
     Click Element    xpath://*[@id="001G000001zNoUG_RelatedContactList_body"]/div/a[2]
     Click Element    xpath://div[@class='listElementBottomNav']//span[@class='listItemPad'][contains(text(),'C')]
     Click Element    xpath://a[contains(text(),'Clarey, Spencer')]
-    Sleep    2s
-    Click Element    id:workWithPortalButton
-    Sleep    2s
-    Click Link    Log in to Community as User
+    Scroll Element Into View    xpath://input[@name='new00NG000000FQZUq']
+    Wait Until Element Is Visible    xpath://span[@id='workWithPortalCopyLabel']
+    Click Element    xpath://span[@id='workWithPortalCopyLabel']
+    Wait Until Element Is Visible    xpath://div[@id='workWithPortalCopyMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]
+    Click Element    xpath://div[@id='workWithPortalCopyMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]
     sleep    3s
     Select From List By Label    xpath://select[@id='portalUserLoginAsSelect']    Order Navigator
     Click Element    xpath://div[@id='loginAsPortalUserOverlayDialog']//div[@class='middle']//input[1]
+    sleep    5s
     Click Link    ${storefront}
 
 loopFOR
@@ -77,6 +74,26 @@ loopFOR
     \    Sleep    5s
     \    Click Link    ${subcat}
     \    Sleep    2s
-    \    Scroll Element Into View    css:#viewcartbutton
+    \    Wait Until Element Is Visible    xpath://button[@id='cc_sort_name_dropdown']
+    \    js_script    (0,500)
     \    Sleep    10s
+    \    Capture Page Screenshot
+
+js_script
+    [Arguments]    ${scrolldown}
+    Execute Javascript    window.scrollBy${scrolldown};
+    log    scrolled
+
+js_plp_check
+    ${var}=    Execute Javascript    ${CURDIR}/plp_check.js
+    \    [Return]    ${var}
+
+loopThroughCats
+    [Arguments]    ${scrolldown}
+    : FOR    ${tab}    IN    @{controls_cat}
+    \    sleep    5s
+    \    Click Link    ${tab}
+    \    Sleep    5s
+    \    Wait Until Element Is Enabled    xpath://button[@id='cc_sort_name_dropdown']    timeout=20s    error=unknown error
+    \    js_script    ${scrolldown}
     \    Capture Page Screenshot
