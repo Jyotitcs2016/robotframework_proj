@@ -1,0 +1,16 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.SFDCReg uat                                                            
+==============================================================================
+reg_categorycheck_UPG_UAT :: Step1 -As a user logged in to UPG store  | PASS |
+------------------------------------------------------------------------------
+Suites.SFDCReg uat                                                    | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\JPP\Documents\Testing\Robot\pabot_results\Suites.SFDCReg uat.reg_categorycheck_UPG_UAT\output.xml

@@ -1,0 +1,8 @@
+datasources:b7a9934a560e9d91e1a706801c532ade2c012982
+commandlineoptions:690611fc3044860a7590e414b4bf0214ad18c978
+suitesfrom:no-suites-from-option
+file:25e90e6f2b5fc7e47224056de0e4449764399748
+--test Suites.SFDCReg sit.reg_categorycheck_UPG
+--test Suites.SFDCReg sit.reg_categorycheck_Controls
+--test Suites.SFDCReg sit.js_use
+--test Suites.SFDCReg uat.reg_categorycheck_UPG_UAT

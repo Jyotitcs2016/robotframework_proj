@@ -1,44 +1,6 @@
-*** Settings ***
-Documentation     SFDC Regression
-Suite Setup       loginSFDC    gc
-Suite Teardown    Close All Browsers
-Library           SeleniumLibrary
-Resource          ${CURDIR}/locators_file.robot
-
-*** Variables ***
-
-*** Test Cases ***
-reg_categorycheck_UPG
-    [Documentation]    Step1 -As a user logged in to UPG store
-    ...    Step2-User click on Catagory trees one by one
-    ...    Step3-User click on each Filters for PLP list items one by one
-    [Tags]    UPG
-    loginStorefront    Ducted Residential & Commercial Systems, Ductless Systems & Source 1 Parts Store
-    Sleep    5s
-    loopFOR    ${element1}    @{cat1}
-    loopFOR    ${element2}    @{cat2}
-    loopFOR    ${element3}    @{cat3}
-    loopFOR    ${element4}    @{cat4}
-
-reg_categorycheck_Controls
-    [Documentation]    Step1 -As a user logged in to Controls store
-    ...    Step2-User click on Catagory trees one by one
-    ...    Step3-User click on each Filters for PLP list items one by one
-    [Tags]    controls
-    loginStorefront    Controls Parts Store
-    Sleep    2s
-    loopThroughCats    (0,2500)
-
-js_use
-    ${Get Vertical Position}    Get Vertical Position    xpath://img[@id='01aG0000001OjLJImg']
-    ${Get horizontal Position}    Get Horizontal Position    xpath://img[@id='01aG0000001OjLJImg']
-    Log    vertical ${Get Vertical Position} pixels,horizon ${Get horizontal Position} pixels
-    js_script
-    sleep    5s
-
 *** Keywords ***
 loginSFDC
-    [Arguments]    ${browser}
+    [Arguments]    ${browser}    ${username}
     Open Browser    ${URL}    ${browser}
     Maximize Browser Window
     Set Browser Implicit Wait    20s

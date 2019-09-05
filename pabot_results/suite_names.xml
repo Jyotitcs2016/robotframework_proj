@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190905 13:51:55.115" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<suite id="s1" name="Suites">
+<suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot" id="s1-s1" name="SFDCReg sit">
+<kw type="setup" name="loginSFDC" library="keywords_lib">
+<arguments>
+<arg>gc</arg>
+<arg>${username}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190905 13:51:55.674" starttime="20190905 13:51:55.674"></status>
+</kw>
+<status status="PASS" endtime="20190905 13:51:55.674" starttime="20190905 13:51:55.673"></status>
+</kw>
+<test id="s1-s1-t1" name="reg_categorycheck_UPG">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190905 13:51:55.677" starttime="20190905 13:51:55.677"></status>
+</kw>
+<doc>Step1 -As a user logged in to UPG store
+Step2-User click on Catagory trees one by one
+Step3-User click on each Filters for PLP list items one by one</doc>
+<tags>
+<tag>UPG</tag>
+</tags>
+<status status="PASS" endtime="20190905 13:51:55.677" critical="yes" starttime="20190905 13:51:55.674"></status>
+</test>
+<test id="s1-s1-t2" name="reg_categorycheck_Controls">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190905 13:51:55.680" starttime="20190905 13:51:55.679"></status>
+</kw>
+<doc>Step1 -As a user logged in to Controls store
+Step2-User click on Catagory trees one by one
+Step3-User click on each Filters for PLP list items one by one</doc>
+<tags>
+<tag>controls</tag>
+</tags>
+<status status="PASS" endtime="20190905 13:51:55.680" critical="yes" starttime="20190905 13:51:55.678"></status>
+</test>
+<test id="s1-s1-t3" name="js_use">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190905 13:51:55.682" starttime="20190905 13:51:55.682"></status>
+</kw>
+<status status="PASS" endtime="20190905 13:51:55.682" critical="yes" starttime="20190905 13:51:55.681"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT_RUN" endtime="20190905 13:51:55.683" starttime="20190905 13:51:55.683"></status>
+</kw>
+<doc>SFDC Regression</doc>
+<status status="PASS" endtime="20190905 13:51:55.683" starttime="20190905 13:51:55.172"></status>
+</suite>
+<suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot" id="s1-s2" name="SFDCReg uat">
+<kw type="setup" name="loginSFDC" library="keywords_lib">
+<arguments>
+<arg>gc</arg>
+<arg>${userid_uat}</arg>
+</arguments>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190905 13:51:55.699" starttime="20190905 13:51:55.699"></status>
+</kw>
+<status status="PASS" endtime="20190905 13:51:55.699" starttime="20190905 13:51:55.698"></status>
+</kw>
+<test id="s1-s2-t1" name="reg_categorycheck_UPG_UAT">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190905 13:51:55.701" starttime="20190905 13:51:55.701"></status>
+</kw>
+<doc>Step1 -As a user logged in to UPG store
+Step2-User click on Catagory trees one by one
+Step3-User click on each Filters for PLP list items one by one</doc>
+<tags>
+<tag>UPG</tag>
+</tags>
+<status status="PASS" endtime="20190905 13:51:55.701" critical="yes" starttime="20190905 13:51:55.700"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT_RUN" endtime="20190905 13:51:55.703" starttime="20190905 13:51:55.702"></status>
+</kw>
+<status status="PASS" endtime="20190905 13:51:55.703" starttime="20190905 13:51:55.686"></status>
+</suite>
+<status status="PASS" endtime="20190905 13:51:55.705" starttime="20190905 13:51:55.121"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">controls</stat>
+<stat fail="0" pass="2">UPG</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Suites" pass="4">Suites</stat>
+<stat fail="0" id="s1-s1" name="SFDCReg sit" pass="3">Suites.SFDCReg sit</stat>
+<stat fail="0" id="s1-s2" name="SFDCReg uat" pass="1">Suites.SFDCReg uat</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190905 13:51:55.099" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190905 13:51:55.103" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190905 13:51:55.514" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\locators_file.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190905 13:51:55.686" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+</errors>
+</robot>

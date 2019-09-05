@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190905 13:55:20.224" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<suite id="s1" name="Suites">
+<suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot" id="s1-s1" name="SFDCReg sit">
+<kw type="setup" name="loginSFDC" library="keywords_lib">
+<arguments>
+<arg>gc</arg>
+<arg>${username}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190905 13:55:20.863" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190905 13:55:49.813" starttime="20190905 13:55:20.863"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190905 13:55:50.945" starttime="20190905 13:55:49.813"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20190905 13:55:50.948" starttime="20190905 13:55:50.946"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190905 13:55:50.949" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
+<status status="PASS" endtime="20190905 13:55:51.675" starttime="20190905 13:55:50.949"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190905 13:55:51.676" level="INFO">Typing password into text field 'css:input#password'.</msg>
+<status status="PASS" endtime="20190905 13:55:52.066" starttime="20190905 13:55:51.676"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>css:input#Login</arg>
+</arguments>
+<status status="PASS" endtime="20190905 13:55:52.131" starttime="20190905 13:55:52.066"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#Login</arg>
+</arguments>
+<msg timestamp="20190905 13:55:52.132" level="INFO">Clicking button 'css:input#Login'.</msg>
+<status status="PASS" endtime="20190905 13:56:24.179" starttime="20190905 13:55:52.132"></status>
+</kw>
+<status status="PASS" endtime="20190905 13:56:24.180" starttime="20190905 13:55:20.862"></status>
+</kw>
+<test id="s1-s1-t1" name="js_use">
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<doc>Returns vertical position of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://img[@id='01aG0000001OjLJImg']</arg>
+</arguments>
+<assign>
+<var>${Get Vertical Position}</var>
+</assign>
+<msg timestamp="20190905 13:56:24.332" level="INFO">${Get Vertical Position} = 1105.0</msg>
+<status status="PASS" endtime="20190905 13:56:24.333" starttime="20190905 13:56:24.182"></status>
+</kw>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<doc>Returns horizontal position of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://img[@id='01aG0000001OjLJImg']</arg>
+</arguments>
+<assign>
+<var>${Get horizontal Position}</var>
+</assign>
+<msg timestamp="20190905 13:56:24.356" level="INFO">${Get horizontal Position} = 511.0</msg>
+<status status="PASS" endtime="20190905 13:56:24.356" starttime="20190905 13:56:24.333"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>vertical ${Get Vertical Position} pixels,horizon ${Get horizontal Position} pixels</arg>
+</arguments>
+<msg timestamp="20190905 13:56:24.357" level="INFO">vertical 1105.0 pixels,horizon 511.0 pixels</msg>
+<status status="PASS" endtime="20190905 13:56:24.358" starttime="20190905 13:56:24.357"></status>
+</kw>
+<kw name="js_script" library="keywords_lib">
+<arguments>
+<arg>(0,1500)</arg>
+</arguments>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollBy${scrolldown};</arg>
+</arguments>
+<msg timestamp="20190905 13:56:24.361" level="INFO">Executing JavaScript:
+window.scrollBy(0,1500);
+Without any arguments.</msg>
+<status status="PASS" endtime="20190905 13:56:24.379" starttime="20190905 13:56:24.359"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>scrolled</arg>
+</arguments>
+<msg timestamp="20190905 13:56:24.380" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 13:56:24.380" starttime="20190905 13:56:24.379"></status>
+</kw>
+<status status="PASS" endtime="20190905 13:56:24.380" starttime="20190905 13:56:24.358"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20190905 13:56:29.381" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 13:56:29.381" starttime="20190905 13:56:24.381"></status>
+</kw>
+<status status="PASS" endtime="20190905 13:56:29.381" critical="yes" starttime="20190905 13:56:24.180"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190905 13:56:32.836" starttime="20190905 13:56:29.385"></status>
+</kw>
+<doc>SFDC Regression</doc>
+<status status="PASS" endtime="20190905 13:56:32.836" starttime="20190905 13:55:20.286"></status>
+</suite>
+<status status="PASS" endtime="20190905 13:56:32.841" starttime="20190905 13:55:20.229"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Suites" pass="1">Suites</stat>
+<stat fail="0" id="s1-s1" name="SFDCReg sit" pass="1">Suites.SFDCReg sit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

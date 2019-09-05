@@ -20,3 +20,4 @@ ${password}       Jyoti@1995
 ...               Empty Enclosures    Engines & Controllers    Lighting Control Panels    Power Devices    Pressure Sensors    Pressure Switches    Refrigeration Controls
 ...               Room Pressure Monitors    Security Devices    Standard Panels    Starters    Temperature and Humidity Sensors    Temperature Switches    Thermostats
 ...               Valves    Variable Speed Drives    Verasys Controls    Water Flow Sensors    Miscellaneous
+${userid_uat}     jyotiprakash.panda-ext@jci.com.uat
