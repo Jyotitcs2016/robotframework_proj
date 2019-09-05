@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190905 13:56:34.227" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<robot rpa="false" generated="20190905 16:14:24.895" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
 <suite id="s1" name="Suites">
 <suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot" id="s1-s1" name="SFDCReg uat">
 <kw type="setup" name="loginSFDC" library="keywords_lib">
@@ -13,19 +13,19 @@
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190905 13:56:35.115" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
-<status status="PASS" endtime="20190905 13:56:53.442" starttime="20190905 13:56:35.113"></status>
+<msg timestamp="20190905 16:14:26.163" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190905 16:15:50.072" starttime="20190905 16:14:26.162"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190905 13:56:54.572" starttime="20190905 13:56:53.442"></status>
+<status status="PASS" endtime="20190905 16:15:51.559" starttime="20190905 16:15:50.072"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>20s</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:56:54.576" starttime="20190905 13:56:54.573"></status>
+<status status="PASS" endtime="20190905 16:15:51.622" starttime="20190905 16:15:51.560"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -33,8 +33,8 @@
 <arg>css:input#username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190905 13:56:54.577" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com.uat' into text field 'css:input#username'.</msg>
-<status status="PASS" endtime="20190905 13:56:55.267" starttime="20190905 13:56:54.576"></status>
+<msg timestamp="20190905 16:15:51.624" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com.uat' into text field 'css:input#username'.</msg>
+<status status="PASS" endtime="20190905 16:16:01.329" starttime="20190905 16:15:51.623"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
@@ -42,25 +42,25 @@
 <arg>css:input#password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190905 13:56:55.268" level="INFO">Typing password into text field 'css:input#password'.</msg>
-<status status="PASS" endtime="20190905 13:56:55.593" starttime="20190905 13:56:55.267"></status>
+<msg timestamp="20190905 16:16:01.330" level="INFO">Typing password into text field 'css:input#password'.</msg>
+<status status="PASS" endtime="20190905 16:16:07.712" starttime="20190905 16:16:01.329"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>css:input#Login</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:56:55.749" starttime="20190905 13:56:55.593"></status>
+<status status="PASS" endtime="20190905 16:16:09.196" starttime="20190905 16:16:07.713"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>css:input#Login</arg>
 </arguments>
-<msg timestamp="20190905 13:56:55.750" level="INFO">Clicking button 'css:input#Login'.</msg>
-<status status="PASS" endtime="20190905 13:57:23.442" starttime="20190905 13:56:55.750"></status>
+<msg timestamp="20190905 16:16:09.197" level="INFO">Clicking button 'css:input#Login'.</msg>
+<status status="PASS" endtime="20190905 16:17:40.988" starttime="20190905 16:16:09.196"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:57:23.443" starttime="20190905 13:56:35.112"></status>
+<status status="PASS" endtime="20190905 16:17:40.989" starttime="20190905 16:14:26.160"></status>
 </kw>
 <test id="s1-s1-t1" name="reg_categorycheck_UPG_UAT">
 <kw name="loginStorefront" library="keywords_lib">
@@ -72,7 +72,7 @@
 <arguments>
 <arg>xpath://input[@id='phSearchInput']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:57:23.515" starttime="20190905 13:57:23.446"></status>
+<status status="PASS" endtime="20190905 16:17:41.235" starttime="20190905 16:17:40.993"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -80,93 +80,93 @@
 <arg>xpath://input[@id='phSearchInput']</arg>
 <arg>${account_type}</arg>
 </arguments>
-<msg timestamp="20190905 13:57:23.516" level="INFO">Typing text 'JCI Corporate General Account' into text field 'xpath://input[@id='phSearchInput']'.</msg>
-<status status="PASS" endtime="20190905 13:57:24.506" starttime="20190905 13:57:23.516"></status>
+<msg timestamp="20190905 16:17:41.237" level="INFO">Typing text 'JCI Corporate General Account' into text field 'xpath://input[@id='phSearchInput']'.</msg>
+<status status="PASS" endtime="20190905 16:17:47.003" starttime="20190905 16:17:41.236"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>css:div#searchButtonContainer&gt;input</arg>
 </arguments>
-<msg timestamp="20190905 13:57:24.507" level="INFO">Clicking button 'css:div#searchButtonContainer&gt;input'.</msg>
-<status status="PASS" endtime="20190905 13:57:31.760" starttime="20190905 13:57:24.506"></status>
+<msg timestamp="20190905 16:17:47.004" level="INFO">Clicking button 'css:div#searchButtonContainer&gt;input'.</msg>
+<status status="PASS" endtime="20190905 16:18:04.037" starttime="20190905 16:17:47.004"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]</arg>
 </arguments>
-<msg timestamp="20190905 13:57:31.762" level="INFO">Clicking element 'xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]'.</msg>
-<status status="PASS" endtime="20190905 13:57:38.269" starttime="20190905 13:57:31.761"></status>
+<msg timestamp="20190905 16:18:04.039" level="INFO">Clicking element 'xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]'.</msg>
+<status status="PASS" endtime="20190905 16:18:13.370" starttime="20190905 16:18:04.038"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://*[@id="001G000001zNoUG_RelatedContactList_body"]/div/a[2]</arg>
 </arguments>
-<msg timestamp="20190905 13:57:38.271" level="INFO">Clicking element 'xpath://*[@id="001G000001zNoUG_RelatedContactList_body"]/div/a[2]'.</msg>
-<status status="PASS" endtime="20190905 13:57:40.749" starttime="20190905 13:57:38.270"></status>
+<msg timestamp="20190905 16:18:13.372" level="INFO">Clicking element 'xpath://*[@id="001G000001zNoUG_RelatedContactList_body"]/div/a[2]'.</msg>
+<status status="PASS" endtime="20190905 16:18:16.858" starttime="20190905 16:18:13.371"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[@class='listElementBottomNav']//span[@class='listItemPad'][contains(text(),'C')]</arg>
 </arguments>
-<msg timestamp="20190905 13:57:40.750" level="INFO">Clicking element 'xpath://div[@class='listElementBottomNav']//span[@class='listItemPad'][contains(text(),'C')]'.</msg>
-<status status="PASS" endtime="20190905 13:57:42.949" starttime="20190905 13:57:40.750"></status>
+<msg timestamp="20190905 16:18:16.859" level="INFO">Clicking element 'xpath://div[@class='listElementBottomNav']//span[@class='listItemPad'][contains(text(),'C')]'.</msg>
+<status status="PASS" endtime="20190905 16:18:20.728" starttime="20190905 16:18:16.858"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://a[contains(text(),'Clarey, Spencer')]</arg>
 </arguments>
-<msg timestamp="20190905 13:57:42.950" level="INFO">Clicking element 'xpath://a[contains(text(),'Clarey, Spencer')]'.</msg>
-<status status="PASS" endtime="20190905 13:57:49.733" starttime="20190905 13:57:42.949"></status>
+<msg timestamp="20190905 16:18:20.729" level="INFO">Clicking element 'xpath://a[contains(text(),'Clarey, Spencer')]'.</msg>
+<status status="PASS" endtime="20190905 16:18:44.361" starttime="20190905 16:18:20.728"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls an element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath://input[@name='new00NG000000FQZUq']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:57:49.979" starttime="20190905 13:57:49.733"></status>
+<status status="PASS" endtime="20190905 16:18:44.968" starttime="20190905 16:18:44.361"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://span[@id='workWithPortalCopyLabel']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:57:50.132" starttime="20190905 13:57:49.979"></status>
+<status status="PASS" endtime="20190905 16:18:45.864" starttime="20190905 16:18:44.969"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://span[@id='workWithPortalCopyLabel']</arg>
 </arguments>
-<msg timestamp="20190905 13:57:50.134" level="INFO">Clicking element 'xpath://span[@id='workWithPortalCopyLabel']'.</msg>
-<status status="PASS" endtime="20190905 13:57:50.352" starttime="20190905 13:57:50.133"></status>
+<msg timestamp="20190905 16:18:45.866" level="INFO">Clicking element 'xpath://span[@id='workWithPortalCopyLabel']'.</msg>
+<status status="PASS" endtime="20190905 16:18:46.264" starttime="20190905 16:18:45.865"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://div[@id='workWithPortalCopyMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:57:50.421" starttime="20190905 13:57:50.353"></status>
+<status status="PASS" endtime="20190905 16:18:46.405" starttime="20190905 16:18:46.265"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[@id='workWithPortalCopyMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]</arg>
 </arguments>
-<msg timestamp="20190905 13:57:50.422" level="INFO">Clicking element 'xpath://div[@id='workWithPortalCopyMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]'.</msg>
-<status status="PASS" endtime="20190905 13:57:52.233" starttime="20190905 13:57:50.421"></status>
+<msg timestamp="20190905 16:18:46.407" level="INFO">Clicking element 'xpath://div[@id='workWithPortalCopyMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]'.</msg>
+<status status="PASS" endtime="20190905 16:18:47.445" starttime="20190905 16:18:46.406"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20190905 13:57:55.235" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20190905 13:57:55.235" starttime="20190905 13:57:52.233"></status>
+<msg timestamp="20190905 16:18:50.447" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190905 16:18:50.447" starttime="20190905 16:18:47.446"></status>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
@@ -174,42 +174,42 @@
 <arg>xpath://select[@id='portalUserLoginAsSelect']</arg>
 <arg>Order Navigator</arg>
 </arguments>
-<msg timestamp="20190905 13:57:55.236" level="INFO">Selecting options from selection list 'xpath://select[@id='portalUserLoginAsSelect']' by label Order Navigator.</msg>
-<status status="PASS" endtime="20190905 13:57:55.402" starttime="20190905 13:57:55.235"></status>
+<msg timestamp="20190905 16:18:50.449" level="INFO">Selecting options from selection list 'xpath://select[@id='portalUserLoginAsSelect']' by label Order Navigator.</msg>
+<status status="PASS" endtime="20190905 16:18:51.178" starttime="20190905 16:18:50.448"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[@id='loginAsPortalUserOverlayDialog']//div[@class='middle']//input[1]</arg>
 </arguments>
-<msg timestamp="20190905 13:57:55.403" level="INFO">Clicking element 'xpath://div[@id='loginAsPortalUserOverlayDialog']//div[@class='middle']//input[1]'.</msg>
-<status status="PASS" endtime="20190905 13:58:02.414" starttime="20190905 13:57:55.402"></status>
+<msg timestamp="20190905 16:18:51.179" level="INFO">Clicking element 'xpath://div[@id='loginAsPortalUserOverlayDialog']//div[@class='middle']//input[1]'.</msg>
+<status status="PASS" endtime="20190905 16:19:11.014" starttime="20190905 16:18:51.179"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 13:58:07.416" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 13:58:07.416" starttime="20190905 13:58:02.415"></status>
+<msg timestamp="20190905 16:19:16.015" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:19:16.015" starttime="20190905 16:19:11.015"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${storefront}</arg>
 </arguments>
-<msg timestamp="20190905 13:58:07.417" level="INFO">Clicking link 'Ducted Residential &amp; Commercial Systems, Ductless Systems &amp; Source 1 Parts Store'.</msg>
-<status status="PASS" endtime="20190905 13:58:19.781" starttime="20190905 13:58:07.417"></status>
+<msg timestamp="20190905 16:19:16.016" level="INFO">Clicking link 'Ducted Residential &amp; Commercial Systems, Ductless Systems &amp; Source 1 Parts Store'.</msg>
+<status status="PASS" endtime="20190905 16:19:55.068" starttime="20190905 16:19:16.015"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:58:19.781" starttime="20190905 13:57:23.445"></status>
+<status status="PASS" endtime="20190905 16:19:55.069" starttime="20190905 16:17:40.991"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 13:58:24.782" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 13:58:24.782" starttime="20190905 13:58:19.781"></status>
+<msg timestamp="20190905 16:20:00.073" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:20:00.075" starttime="20190905 16:19:55.069"></status>
 </kw>
 <kw name="loopFOR" library="keywords_lib">
 <arguments>
@@ -223,47 +223,47 @@
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 13:58:24.785" level="INFO">clicking Controls and Accessories</msg>
-<status status="PASS" endtime="20190905 13:58:24.785" starttime="20190905 13:58:24.784"></status>
+<msg timestamp="20190905 16:20:00.077" level="INFO">clicking Controls and Accessories</msg>
+<status status="PASS" endtime="20190905 16:20:00.077" starttime="20190905 16:20:00.076"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 13:58:24.786" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 13:58:24.951" starttime="20190905 13:58:24.785"></status>
+<msg timestamp="20190905 16:20:00.078" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:20:00.261" starttime="20190905 16:20:00.078"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 13:58:29.953" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 13:58:29.953" starttime="20190905 13:58:24.952"></status>
+<msg timestamp="20190905 16:20:05.262" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:20:05.262" starttime="20190905 16:20:00.261"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 13:58:29.954" level="INFO">Clicking link 'Controls and Accessories'.</msg>
-<status status="PASS" endtime="20190905 13:58:37.358" starttime="20190905 13:58:29.953"></status>
+<msg timestamp="20190905 16:20:05.263" level="INFO">Clicking link 'Controls and Accessories'.</msg>
+<status status="PASS" endtime="20190905 16:20:25.272" starttime="20190905 16:20:05.263"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 13:58:39.359" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 13:58:39.359" starttime="20190905 13:58:37.359"></status>
+<msg timestamp="20190905 16:20:27.275" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:20:27.276" starttime="20190905 16:20:25.273"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:58:40.071" starttime="20190905 13:58:39.360"></status>
+<status status="PASS" endtime="20190905 16:20:27.481" starttime="20190905 16:20:27.277"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -274,35 +274,35 @@
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 13:58:40.077" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:20:27.487" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 13:58:40.117" starttime="20190905 13:58:40.073"></status>
+<status status="PASS" endtime="20190905 16:20:27.511" starttime="20190905 16:20:27.483"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 13:58:40.118" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 13:58:40.119" starttime="20190905 13:58:40.118"></status>
+<msg timestamp="20190905 16:20:27.512" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:20:27.512" starttime="20190905 16:20:27.511"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:58:40.119" starttime="20190905 13:58:40.072"></status>
+<status status="PASS" endtime="20190905 16:20:27.513" starttime="20190905 16:20:27.482"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 13:58:50.120" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 13:58:50.120" starttime="20190905 13:58:40.120"></status>
+<msg timestamp="20190905 16:20:37.515" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:20:37.516" starttime="20190905 16:20:27.513"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 13:58:50.660" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 13:58:50.660" starttime="20190905 13:58:50.120"></status>
+<msg timestamp="20190905 16:20:38.733" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:20:38.734" starttime="20190905 16:20:37.516"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:58:50.660" starttime="20190905 13:58:24.784"></status>
+<status status="PASS" endtime="20190905 16:20:38.734" starttime="20190905 16:20:00.076"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Indoor Units">
 <kw name="Log" library="BuiltIn">
@@ -310,47 +310,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 13:58:50.661" level="INFO">clicking Indoor Units</msg>
-<status status="PASS" endtime="20190905 13:58:50.661" starttime="20190905 13:58:50.661"></status>
+<msg timestamp="20190905 16:20:38.735" level="INFO">clicking Indoor Units</msg>
+<status status="PASS" endtime="20190905 16:20:38.736" starttime="20190905 16:20:38.735"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 13:58:50.662" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 13:58:50.857" starttime="20190905 13:58:50.662"></status>
+<msg timestamp="20190905 16:20:38.737" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:20:39.218" starttime="20190905 16:20:38.736"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 13:58:55.858" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 13:58:55.858" starttime="20190905 13:58:50.858"></status>
+<msg timestamp="20190905 16:20:44.221" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:20:44.222" starttime="20190905 16:20:39.219"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 13:58:55.859" level="INFO">Clicking link 'Indoor Units'.</msg>
-<status status="PASS" endtime="20190905 13:59:05.672" starttime="20190905 13:58:55.859"></status>
+<msg timestamp="20190905 16:20:44.223" level="INFO">Clicking link 'Indoor Units'.</msg>
+<status status="PASS" endtime="20190905 16:21:14.597" starttime="20190905 16:20:44.222"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 13:59:07.673" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 13:59:07.673" starttime="20190905 13:59:05.673"></status>
+<msg timestamp="20190905 16:21:16.600" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:21:16.600" starttime="20190905 16:21:14.598"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:59:07.728" starttime="20190905 13:59:07.673"></status>
+<status status="PASS" endtime="20190905 16:21:18.044" starttime="20190905 16:21:16.601"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -361,35 +361,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 13:59:07.732" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:21:18.052" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 13:59:07.741" starttime="20190905 13:59:07.730"></status>
+<status status="PASS" endtime="20190905 16:21:18.633" starttime="20190905 16:21:18.048"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 13:59:07.742" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 13:59:07.742" starttime="20190905 13:59:07.741"></status>
+<msg timestamp="20190905 16:21:18.635" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:21:18.635" starttime="20190905 16:21:18.634"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:59:07.742" starttime="20190905 13:59:07.729"></status>
+<status status="PASS" endtime="20190905 16:21:18.635" starttime="20190905 16:21:18.046"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 13:59:17.743" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 13:59:17.743" starttime="20190905 13:59:07.743"></status>
+<msg timestamp="20190905 16:21:28.636" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:21:28.636" starttime="20190905 16:21:18.636"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 13:59:18.187" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 13:59:18.187" starttime="20190905 13:59:17.743"></status>
+<msg timestamp="20190905 16:21:29.347" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:21:29.348" starttime="20190905 16:21:28.636"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:59:18.187" starttime="20190905 13:58:50.660"></status>
+<status status="PASS" endtime="20190905 16:21:29.348" starttime="20190905 16:20:38.734"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Multi Zone">
 <kw name="Log" library="BuiltIn">
@@ -397,47 +397,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 13:59:18.188" level="INFO">clicking Multi Zone</msg>
-<status status="PASS" endtime="20190905 13:59:18.189" starttime="20190905 13:59:18.188"></status>
+<msg timestamp="20190905 16:21:29.351" level="INFO">clicking Multi Zone</msg>
+<status status="PASS" endtime="20190905 16:21:29.351" starttime="20190905 16:21:29.349"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 13:59:18.190" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 13:59:18.348" starttime="20190905 13:59:18.189"></status>
+<msg timestamp="20190905 16:21:29.351" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:21:30.079" starttime="20190905 16:21:29.351"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 13:59:23.349" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 13:59:23.349" starttime="20190905 13:59:18.348"></status>
+<msg timestamp="20190905 16:21:35.080" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:21:35.080" starttime="20190905 16:21:30.079"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 13:59:23.350" level="INFO">Clicking link 'Multi Zone'.</msg>
-<status status="PASS" endtime="20190905 13:59:31.530" starttime="20190905 13:59:23.349"></status>
+<msg timestamp="20190905 16:21:35.081" level="INFO">Clicking link 'Multi Zone'.</msg>
+<status status="PASS" endtime="20190905 16:21:53.643" starttime="20190905 16:21:35.080"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 13:59:33.531" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 13:59:33.531" starttime="20190905 13:59:31.530"></status>
+<msg timestamp="20190905 16:21:55.646" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:21:55.646" starttime="20190905 16:21:53.644"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:59:33.589" starttime="20190905 13:59:33.531"></status>
+<status status="PASS" endtime="20190905 16:21:55.760" starttime="20190905 16:21:55.646"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -448,35 +448,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 13:59:33.595" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:21:55.770" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 13:59:33.602" starttime="20190905 13:59:33.590"></status>
+<status status="PASS" endtime="20190905 16:21:55.783" starttime="20190905 16:21:55.762"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 13:59:33.603" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 13:59:33.603" starttime="20190905 13:59:33.602"></status>
+<msg timestamp="20190905 16:21:55.785" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:21:55.785" starttime="20190905 16:21:55.784"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:59:33.603" starttime="20190905 13:59:33.589"></status>
+<status status="PASS" endtime="20190905 16:21:55.786" starttime="20190905 16:21:55.760"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 13:59:43.604" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 13:59:43.605" starttime="20190905 13:59:33.603"></status>
+<msg timestamp="20190905 16:22:05.787" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:22:05.787" starttime="20190905 16:21:55.786"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 13:59:44.169" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 13:59:44.170" starttime="20190905 13:59:43.605"></status>
+<msg timestamp="20190905 16:22:06.477" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:22:06.477" starttime="20190905 16:22:05.787"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:59:44.170" starttime="20190905 13:59:18.187"></status>
+<status status="PASS" endtime="20190905 16:22:06.478" starttime="20190905 16:21:29.348"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Outdoor Units/Outdoor Mini VRF">
 <kw name="Log" library="BuiltIn">
@@ -484,47 +484,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 13:59:44.171" level="INFO">clicking Outdoor Units/Outdoor Mini VRF</msg>
-<status status="PASS" endtime="20190905 13:59:44.171" starttime="20190905 13:59:44.170"></status>
+<msg timestamp="20190905 16:22:06.479" level="INFO">clicking Outdoor Units/Outdoor Mini VRF</msg>
+<status status="PASS" endtime="20190905 16:22:06.480" starttime="20190905 16:22:06.478"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 13:59:44.172" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 13:59:44.379" starttime="20190905 13:59:44.172"></status>
+<msg timestamp="20190905 16:22:06.481" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:22:07.527" starttime="20190905 16:22:06.480"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 13:59:49.381" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 13:59:49.381" starttime="20190905 13:59:44.380"></status>
+<msg timestamp="20190905 16:22:12.529" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:22:12.529" starttime="20190905 16:22:07.527"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 13:59:49.382" level="INFO">Clicking link 'Outdoor Units/Outdoor Mini VRF'.</msg>
-<status status="PASS" endtime="20190905 14:00:10.404" starttime="20190905 13:59:49.381"></status>
+<msg timestamp="20190905 16:22:12.531" level="INFO">Clicking link 'Outdoor Units/Outdoor Mini VRF'.</msg>
+<status status="PASS" endtime="20190905 16:22:27.090" starttime="20190905 16:22:12.530"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:00:12.405" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:00:12.405" starttime="20190905 14:00:10.404"></status>
+<msg timestamp="20190905 16:22:29.093" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:22:29.093" starttime="20190905 16:22:27.091"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:00:12.465" starttime="20190905 14:00:12.405"></status>
+<status status="PASS" endtime="20190905 16:22:29.447" starttime="20190905 16:22:29.094"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -535,35 +535,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:00:12.469" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:22:29.453" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:00:12.555" starttime="20190905 14:00:12.466"></status>
+<status status="PASS" endtime="20190905 16:22:29.518" starttime="20190905 16:22:29.449"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:00:12.556" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:00:12.556" starttime="20190905 14:00:12.556"></status>
+<msg timestamp="20190905 16:22:29.520" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:22:29.520" starttime="20190905 16:22:29.519"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:00:12.557" starttime="20190905 14:00:12.465"></status>
+<status status="PASS" endtime="20190905 16:22:29.520" starttime="20190905 16:22:29.447"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:00:22.558" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:00:22.558" starttime="20190905 14:00:12.557"></status>
+<msg timestamp="20190905 16:22:39.523" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:22:39.523" starttime="20190905 16:22:29.521"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:00:23.147" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:00:23.148" starttime="20190905 14:00:22.559"></status>
+<msg timestamp="20190905 16:22:40.291" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:22:40.292" starttime="20190905 16:22:39.523"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:00:23.148" starttime="20190905 13:59:44.170"></status>
+<status status="PASS" endtime="20190905 16:22:40.292" starttime="20190905 16:22:06.478"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Single Zone">
 <kw name="Log" library="BuiltIn">
@@ -571,47 +571,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:00:23.149" level="INFO">clicking Single Zone</msg>
-<status status="PASS" endtime="20190905 14:00:23.149" starttime="20190905 14:00:23.148"></status>
+<msg timestamp="20190905 16:22:40.294" level="INFO">clicking Single Zone</msg>
+<status status="PASS" endtime="20190905 16:22:40.294" starttime="20190905 16:22:40.293"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:00:23.150" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:00:23.609" starttime="20190905 14:00:23.150"></status>
+<msg timestamp="20190905 16:22:40.295" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:22:41.013" starttime="20190905 16:22:40.295"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:00:28.610" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:00:28.610" starttime="20190905 14:00:23.610"></status>
+<msg timestamp="20190905 16:22:46.014" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:22:46.014" starttime="20190905 16:22:41.013"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:00:28.610" level="INFO">Clicking link 'Single Zone'.</msg>
-<status status="PASS" endtime="20190905 14:00:58.687" starttime="20190905 14:00:28.610"></status>
+<msg timestamp="20190905 16:22:46.016" level="INFO">Clicking link 'Single Zone'.</msg>
+<status status="PASS" endtime="20190905 16:23:04.284" starttime="20190905 16:22:46.015"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:01:00.688" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:01:00.688" starttime="20190905 14:00:58.688"></status>
+<msg timestamp="20190905 16:23:06.286" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:23:06.286" starttime="20190905 16:23:04.284"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:01:00.793" starttime="20190905 14:01:00.689"></status>
+<status status="PASS" endtime="20190905 16:23:06.357" starttime="20190905 16:23:06.286"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -622,39 +622,39 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:01:00.797" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:23:06.362" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:01:00.813" starttime="20190905 14:01:00.795"></status>
+<status status="PASS" endtime="20190905 16:23:06.378" starttime="20190905 16:23:06.358"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:01:00.814" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:01:00.814" starttime="20190905 14:01:00.814"></status>
+<msg timestamp="20190905 16:23:06.379" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:23:06.380" starttime="20190905 16:23:06.378"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:01:00.815" starttime="20190905 14:01:00.794"></status>
+<status status="PASS" endtime="20190905 16:23:06.380" starttime="20190905 16:23:06.357"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:01:10.816" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:01:10.816" starttime="20190905 14:01:00.815"></status>
+<msg timestamp="20190905 16:23:16.381" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:23:16.381" starttime="20190905 16:23:06.380"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:01:11.331" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:01:11.332" starttime="20190905 14:01:10.817"></status>
+<msg timestamp="20190905 16:23:17.450" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:23:17.452" starttime="20190905 16:23:16.382"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:01:11.332" starttime="20190905 14:00:23.148"></status>
+<status status="PASS" endtime="20190905 16:23:17.452" starttime="20190905 16:22:40.292"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:01:11.332" starttime="20190905 13:58:24.784"></status>
+<status status="PASS" endtime="20190905 16:23:17.452" starttime="20190905 16:20:00.076"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:01:11.332" starttime="20190905 13:58:24.783"></status>
+<status status="PASS" endtime="20190905 16:23:17.452" starttime="20190905 16:20:00.075"></status>
 </kw>
 <kw name="loopFOR" library="keywords_lib">
 <arguments>
@@ -668,47 +668,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:01:11.335" level="INFO">clicking Commercial Split System Heat Pumps</msg>
-<status status="PASS" endtime="20190905 14:01:11.335" starttime="20190905 14:01:11.334"></status>
+<msg timestamp="20190905 16:23:17.457" level="INFO">clicking Commercial Split System Heat Pumps</msg>
+<status status="PASS" endtime="20190905 16:23:17.458" starttime="20190905 16:23:17.456"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:01:11.336" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOgQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:01:11.769" starttime="20190905 14:01:11.335"></status>
+<msg timestamp="20190905 16:23:17.459" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOgQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:23:17.969" starttime="20190905 16:23:17.458"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:01:16.771" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:01:16.771" starttime="20190905 14:01:11.770"></status>
+<msg timestamp="20190905 16:23:22.970" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:23:22.970" starttime="20190905 16:23:17.969"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:01:16.772" level="INFO">Clicking link 'Commercial Split System Heat Pumps'.</msg>
-<status status="PASS" endtime="20190905 14:01:26.110" starttime="20190905 14:01:16.771"></status>
+<msg timestamp="20190905 16:23:22.972" level="INFO">Clicking link 'Commercial Split System Heat Pumps'.</msg>
+<status status="PASS" endtime="20190905 16:23:55.366" starttime="20190905 16:23:22.971"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:01:28.112" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:01:28.112" starttime="20190905 14:01:26.111"></status>
+<msg timestamp="20190905 16:23:57.368" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:23:57.368" starttime="20190905 16:23:55.367"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:01:28.235" starttime="20190905 14:01:28.113"></status>
+<status status="PASS" endtime="20190905 16:23:57.753" starttime="20190905 16:23:57.369"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -719,35 +719,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:01:28.239" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:23:57.758" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:01:28.246" starttime="20190905 14:01:28.237"></status>
+<status status="PASS" endtime="20190905 16:23:57.776" starttime="20190905 16:23:57.755"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:01:28.247" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:01:28.247" starttime="20190905 14:01:28.246"></status>
+<msg timestamp="20190905 16:23:57.777" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:23:57.778" starttime="20190905 16:23:57.777"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:01:28.247" starttime="20190905 14:01:28.236"></status>
+<status status="PASS" endtime="20190905 16:23:57.778" starttime="20190905 16:23:57.754"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:01:38.248" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:01:38.248" starttime="20190905 14:01:28.247"></status>
+<msg timestamp="20190905 16:24:07.779" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:24:07.779" starttime="20190905 16:23:57.778"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:01:38.764" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:01:38.764" starttime="20190905 14:01:38.248"></status>
+<msg timestamp="20190905 16:24:08.431" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:24:08.432" starttime="20190905 16:24:07.780"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:01:38.765" starttime="20190905 14:01:11.334"></status>
+<status status="PASS" endtime="20190905 16:24:08.432" starttime="20190905 16:23:17.456"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Commercial Split Systems">
 <kw name="Log" library="BuiltIn">
@@ -755,47 +755,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:01:38.766" level="INFO">clicking Commercial Split Systems</msg>
-<status status="PASS" endtime="20190905 14:01:38.766" starttime="20190905 14:01:38.765"></status>
+<msg timestamp="20190905 16:24:08.433" level="INFO">clicking Commercial Split Systems</msg>
+<status status="PASS" endtime="20190905 16:24:08.433" starttime="20190905 16:24:08.432"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:01:38.767" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOgQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:01:38.981" starttime="20190905 14:01:38.766"></status>
+<msg timestamp="20190905 16:24:08.434" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOgQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:24:09.367" starttime="20190905 16:24:08.434"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:01:43.983" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:01:43.983" starttime="20190905 14:01:38.981"></status>
+<msg timestamp="20190905 16:24:14.382" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:24:14.383" starttime="20190905 16:24:09.368"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:01:43.984" level="INFO">Clicking link 'Commercial Split Systems'.</msg>
-<status status="PASS" endtime="20190905 14:01:51.058" starttime="20190905 14:01:43.983"></status>
+<msg timestamp="20190905 16:24:14.385" level="INFO">Clicking link 'Commercial Split Systems'.</msg>
+<status status="PASS" endtime="20190905 16:24:29.536" starttime="20190905 16:24:14.384"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:01:53.060" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:01:53.060" starttime="20190905 14:01:51.059"></status>
+<msg timestamp="20190905 16:24:31.537" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:24:31.537" starttime="20190905 16:24:29.537"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:01:53.240" starttime="20190905 14:01:53.061"></status>
+<status status="PASS" endtime="20190905 16:24:31.604" starttime="20190905 16:24:31.537"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -806,35 +806,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:01:53.244" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:24:31.607" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:01:53.260" starttime="20190905 14:01:53.242"></status>
+<status status="PASS" endtime="20190905 16:24:31.615" starttime="20190905 16:24:31.605"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:01:53.261" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:01:53.261" starttime="20190905 14:01:53.260"></status>
+<msg timestamp="20190905 16:24:31.616" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:24:31.616" starttime="20190905 16:24:31.615"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:01:53.261" starttime="20190905 14:01:53.241"></status>
+<status status="PASS" endtime="20190905 16:24:31.616" starttime="20190905 16:24:31.604"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:02:03.264" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:02:03.264" starttime="20190905 14:01:53.261"></status>
+<msg timestamp="20190905 16:24:41.617" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:24:41.617" starttime="20190905 16:24:31.617"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:02:03.791" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:02:03.791" starttime="20190905 14:02:03.266"></status>
+<msg timestamp="20190905 16:24:42.165" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:24:42.165" starttime="20190905 16:24:41.617"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:02:03.791" starttime="20190905 14:01:38.765"></status>
+<status status="PASS" endtime="20190905 16:24:42.165" starttime="20190905 16:24:08.432"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Packaged Heat Pumps">
 <kw name="Log" library="BuiltIn">
@@ -842,47 +842,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:02:03.793" level="INFO">clicking Packaged Heat Pumps</msg>
-<status status="PASS" endtime="20190905 14:02:03.793" starttime="20190905 14:02:03.792"></status>
+<msg timestamp="20190905 16:24:42.167" level="INFO">clicking Packaged Heat Pumps</msg>
+<status status="PASS" endtime="20190905 16:24:42.167" starttime="20190905 16:24:42.166"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:02:03.794" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOgQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:02:04.032" starttime="20190905 14:02:03.793"></status>
+<msg timestamp="20190905 16:24:42.169" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOgQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:24:42.509" starttime="20190905 16:24:42.168"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:02:09.033" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:02:09.033" starttime="20190905 14:02:04.033"></status>
+<msg timestamp="20190905 16:24:47.510" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:24:47.510" starttime="20190905 16:24:42.509"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:02:09.034" level="INFO">Clicking link 'Packaged Heat Pumps'.</msg>
-<status status="PASS" endtime="20190905 14:02:36.912" starttime="20190905 14:02:09.033"></status>
+<msg timestamp="20190905 16:24:47.511" level="INFO">Clicking link 'Packaged Heat Pumps'.</msg>
+<status status="PASS" endtime="20190905 16:25:24.387" starttime="20190905 16:24:47.511"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:02:38.913" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:02:38.913" starttime="20190905 14:02:36.912"></status>
+<msg timestamp="20190905 16:25:26.388" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:25:26.388" starttime="20190905 16:25:24.387"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:02:39.012" starttime="20190905 14:02:38.914"></status>
+<status status="PASS" endtime="20190905 16:25:26.753" starttime="20190905 16:25:26.389"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -893,35 +893,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:02:39.016" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:25:26.758" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:02:39.073" starttime="20190905 14:02:39.014"></status>
+<status status="PASS" endtime="20190905 16:25:26.875" starttime="20190905 16:25:26.755"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:02:39.074" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:02:39.075" starttime="20190905 14:02:39.074"></status>
+<msg timestamp="20190905 16:25:26.877" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:25:26.877" starttime="20190905 16:25:26.876"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:02:39.075" starttime="20190905 14:02:39.013"></status>
+<status status="PASS" endtime="20190905 16:25:26.877" starttime="20190905 16:25:26.754"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:02:49.076" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:02:49.076" starttime="20190905 14:02:39.075"></status>
+<msg timestamp="20190905 16:25:36.879" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:25:36.879" starttime="20190905 16:25:26.878"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:02:58.372" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:02:58.373" starttime="20190905 14:02:49.077"></status>
+<msg timestamp="20190905 16:25:37.455" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:25:37.455" starttime="20190905 16:25:36.880"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:02:58.373" starttime="20190905 14:02:03.792"></status>
+<status status="PASS" endtime="20190905 16:25:37.456" starttime="20190905 16:24:42.166"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Packaged Rooftop Units">
 <kw name="Log" library="BuiltIn">
@@ -929,47 +929,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:02:58.374" level="INFO">clicking Packaged Rooftop Units</msg>
-<status status="PASS" endtime="20190905 14:02:58.374" starttime="20190905 14:02:58.373"></status>
+<msg timestamp="20190905 16:25:37.457" level="INFO">clicking Packaged Rooftop Units</msg>
+<status status="PASS" endtime="20190905 16:25:37.457" starttime="20190905 16:25:37.456"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:02:58.375" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOgQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:02:58.660" starttime="20190905 14:02:58.375"></status>
+<msg timestamp="20190905 16:25:37.458" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOgQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:25:37.711" starttime="20190905 16:25:37.458"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:03:03.662" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:03:03.662" starttime="20190905 14:02:58.661"></status>
+<msg timestamp="20190905 16:25:42.725" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:25:42.727" starttime="20190905 16:25:37.711"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:03:03.663" level="INFO">Clicking link 'Packaged Rooftop Units'.</msg>
-<status status="PASS" endtime="20190905 14:03:28.785" starttime="20190905 14:03:03.662"></status>
+<msg timestamp="20190905 16:25:42.728" level="INFO">Clicking link 'Packaged Rooftop Units'.</msg>
+<status status="PASS" endtime="20190905 16:25:53.473" starttime="20190905 16:25:42.727"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:03:30.787" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:03:30.788" starttime="20190905 14:03:28.786"></status>
+<msg timestamp="20190905 16:25:55.474" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:25:55.477" starttime="20190905 16:25:53.473"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:03:31.424" starttime="20190905 14:03:30.788"></status>
+<status status="PASS" endtime="20190905 16:25:55.999" starttime="20190905 16:25:55.477"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -980,39 +980,39 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:03:31.428" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:25:56.004" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:03:31.445" starttime="20190905 14:03:31.425"></status>
+<status status="PASS" endtime="20190905 16:25:57.302" starttime="20190905 16:25:56.000"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:03:31.445" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:03:31.446" starttime="20190905 14:03:31.445"></status>
+<msg timestamp="20190905 16:25:57.304" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:25:57.304" starttime="20190905 16:25:57.303"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:03:31.446" starttime="20190905 14:03:31.424"></status>
+<status status="PASS" endtime="20190905 16:25:57.305" starttime="20190905 16:25:55.999"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:03:41.448" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:03:41.448" starttime="20190905 14:03:31.446"></status>
+<msg timestamp="20190905 16:26:07.319" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:26:07.319" starttime="20190905 16:25:57.305"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:03:42.014" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:03:42.014" starttime="20190905 14:03:41.449"></status>
+<msg timestamp="20190905 16:26:07.972" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:26:07.972" starttime="20190905 16:26:07.320"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:03:42.014" starttime="20190905 14:02:58.373"></status>
+<status status="PASS" endtime="20190905 16:26:07.972" starttime="20190905 16:25:37.456"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:03:42.014" starttime="20190905 14:01:11.333"></status>
+<status status="PASS" endtime="20190905 16:26:07.973" starttime="20190905 16:23:17.454"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:03:42.015" starttime="20190905 14:01:11.332"></status>
+<status status="PASS" endtime="20190905 16:26:07.973" starttime="20190905 16:23:17.452"></status>
 </kw>
 <kw name="loopFOR" library="keywords_lib">
 <arguments>
@@ -1026,47 +1026,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:03:42.017" level="INFO">clicking Air Conditioners / Split Systems</msg>
-<status status="PASS" endtime="20190905 14:03:42.017" starttime="20190905 14:03:42.016"></status>
+<msg timestamp="20190905 16:26:07.977" level="INFO">clicking Air Conditioners / Split Systems</msg>
+<status status="PASS" endtime="20190905 16:26:07.977" starttime="20190905 16:26:07.976"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:03:42.018" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:03:42.222" starttime="20190905 14:03:42.017"></status>
+<msg timestamp="20190905 16:26:07.979" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:26:09.309" starttime="20190905 16:26:07.977"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:03:47.223" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:03:47.223" starttime="20190905 14:03:42.222"></status>
+<msg timestamp="20190905 16:26:14.312" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:26:14.312" starttime="20190905 16:26:09.310"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:03:47.224" level="INFO">Clicking link 'Air Conditioners / Split Systems'.</msg>
-<status status="PASS" endtime="20190905 14:03:55.290" starttime="20190905 14:03:47.224"></status>
+<msg timestamp="20190905 16:26:14.313" level="INFO">Clicking link 'Air Conditioners / Split Systems'.</msg>
+<status status="PASS" endtime="20190905 16:26:30.635" starttime="20190905 16:26:14.312"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:03:57.330" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:03:57.330" starttime="20190905 14:03:55.291"></status>
+<msg timestamp="20190905 16:26:32.651" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:26:32.652" starttime="20190905 16:26:30.636"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:03:57.671" starttime="20190905 14:03:57.332"></status>
+<status status="PASS" endtime="20190905 16:26:33.005" starttime="20190905 16:26:32.652"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -1077,35 +1077,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:03:57.675" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:26:33.011" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:03:57.695" starttime="20190905 14:03:57.672"></status>
+<status status="PASS" endtime="20190905 16:26:33.169" starttime="20190905 16:26:33.007"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:03:57.696" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:03:57.696" starttime="20190905 14:03:57.696"></status>
+<msg timestamp="20190905 16:26:33.170" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:26:33.171" starttime="20190905 16:26:33.169"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:03:57.697" starttime="20190905 14:03:57.671"></status>
+<status status="PASS" endtime="20190905 16:26:33.171" starttime="20190905 16:26:33.006"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:04:07.698" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:04:07.698" starttime="20190905 14:03:57.697"></status>
+<msg timestamp="20190905 16:26:43.173" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:26:43.173" starttime="20190905 16:26:33.171"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:04:08.201" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:04:08.201" starttime="20190905 14:04:07.698"></status>
+<msg timestamp="20190905 16:26:43.900" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:26:43.901" starttime="20190905 16:26:43.174"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:04:08.201" starttime="20190905 14:03:42.016"></status>
+<status status="PASS" endtime="20190905 16:26:43.901" starttime="20190905 16:26:07.975"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Air Handling Units (AHUs)">
 <kw name="Log" library="BuiltIn">
@@ -1113,47 +1113,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:04:08.203" level="INFO">clicking Air Handling Units (AHUs)</msg>
-<status status="PASS" endtime="20190905 14:04:08.204" starttime="20190905 14:04:08.203"></status>
+<msg timestamp="20190905 16:26:43.903" level="INFO">clicking Air Handling Units (AHUs)</msg>
+<status status="PASS" endtime="20190905 16:26:43.903" starttime="20190905 16:26:43.902"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:04:08.205" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:04:08.379" starttime="20190905 14:04:08.204"></status>
+<msg timestamp="20190905 16:26:43.904" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:26:44.628" starttime="20190905 16:26:43.903"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:04:13.380" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:04:13.380" starttime="20190905 14:04:08.380"></status>
+<msg timestamp="20190905 16:26:49.630" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:26:49.630" starttime="20190905 16:26:44.629"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:04:13.381" level="INFO">Clicking link 'Air Handling Units (AHUs)'.</msg>
-<status status="PASS" endtime="20190905 14:04:20.099" starttime="20190905 14:04:13.380"></status>
+<msg timestamp="20190905 16:26:49.631" level="INFO">Clicking link 'Air Handling Units (AHUs)'.</msg>
+<status status="PASS" endtime="20190905 16:27:02.290" starttime="20190905 16:26:49.630"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:04:22.100" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:04:22.100" starttime="20190905 14:04:20.099"></status>
+<msg timestamp="20190905 16:27:04.292" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:27:04.292" starttime="20190905 16:27:02.291"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:04:22.354" starttime="20190905 14:04:22.101"></status>
+<status status="PASS" endtime="20190905 16:27:04.396" starttime="20190905 16:27:04.292"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -1164,35 +1164,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:04:22.358" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:27:04.401" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:04:22.367" starttime="20190905 14:04:22.355"></status>
+<status status="PASS" endtime="20190905 16:27:04.531" starttime="20190905 16:27:04.398"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:04:22.368" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:04:22.369" starttime="20190905 14:04:22.368"></status>
+<msg timestamp="20190905 16:27:04.532" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:27:04.533" starttime="20190905 16:27:04.532"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:04:22.369" starttime="20190905 14:04:22.354"></status>
+<status status="PASS" endtime="20190905 16:27:04.533" starttime="20190905 16:27:04.396"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:04:32.370" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:04:32.370" starttime="20190905 14:04:22.369"></status>
+<msg timestamp="20190905 16:27:14.536" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:27:14.536" starttime="20190905 16:27:04.534"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:04:32.833" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:04:32.834" starttime="20190905 14:04:32.370"></status>
+<msg timestamp="20190905 16:27:15.347" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:27:15.347" starttime="20190905 16:27:14.537"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:04:32.834" starttime="20190905 14:04:08.201"></status>
+<status status="PASS" endtime="20190905 16:27:15.347" starttime="20190905 16:26:43.901"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Coils">
 <kw name="Log" library="BuiltIn">
@@ -1200,47 +1200,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:04:32.835" level="INFO">clicking Coils</msg>
-<status status="PASS" endtime="20190905 14:04:32.835" starttime="20190905 14:04:32.834"></status>
+<msg timestamp="20190905 16:27:15.349" level="INFO">clicking Coils</msg>
+<status status="PASS" endtime="20190905 16:27:15.349" starttime="20190905 16:27:15.349"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:04:32.836" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:04:33.008" starttime="20190905 14:04:32.836"></status>
+<msg timestamp="20190905 16:27:15.351" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:27:16.259" starttime="20190905 16:27:15.350"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:04:38.009" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:04:38.009" starttime="20190905 14:04:33.008"></status>
+<msg timestamp="20190905 16:27:21.261" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:27:21.261" starttime="20190905 16:27:16.260"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:04:38.010" level="INFO">Clicking link 'Coils'.</msg>
-<status status="PASS" endtime="20190905 14:04:44.311" starttime="20190905 14:04:38.009"></status>
+<msg timestamp="20190905 16:27:21.262" level="INFO">Clicking link 'Coils'.</msg>
+<status status="PASS" endtime="20190905 16:27:40.247" starttime="20190905 16:27:21.261"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:04:46.312" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:04:46.312" starttime="20190905 14:04:44.311"></status>
+<msg timestamp="20190905 16:27:42.248" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:27:42.248" starttime="20190905 16:27:40.247"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:04:46.365" starttime="20190905 14:04:46.312"></status>
+<status status="PASS" endtime="20190905 16:27:42.323" starttime="20190905 16:27:42.248"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -1251,35 +1251,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:04:46.369" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:27:42.330" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:04:46.381" starttime="20190905 14:04:46.367"></status>
+<status status="PASS" endtime="20190905 16:27:42.349" starttime="20190905 16:27:42.325"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:04:46.382" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:04:46.382" starttime="20190905 14:04:46.382"></status>
+<msg timestamp="20190905 16:27:42.351" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:27:42.353" starttime="20190905 16:27:42.350"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:04:46.383" starttime="20190905 14:04:46.366"></status>
+<status status="PASS" endtime="20190905 16:27:42.353" starttime="20190905 16:27:42.324"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:04:56.384" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:04:56.384" starttime="20190905 14:04:46.383"></status>
+<msg timestamp="20190905 16:27:52.354" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:27:52.354" starttime="20190905 16:27:42.354"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:04:56.868" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:04:56.868" starttime="20190905 14:04:56.384"></status>
+<msg timestamp="20190905 16:27:52.948" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:27:52.948" starttime="20190905 16:27:52.355"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:04:56.868" starttime="20190905 14:04:32.834"></status>
+<status status="PASS" endtime="20190905 16:27:52.949" starttime="20190905 16:27:15.348"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Gas Furnaces">
 <kw name="Log" library="BuiltIn">
@@ -1287,47 +1287,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:04:56.869" level="INFO">clicking Gas Furnaces</msg>
-<status status="PASS" endtime="20190905 14:04:56.870" starttime="20190905 14:04:56.869"></status>
+<msg timestamp="20190905 16:27:52.950" level="INFO">clicking Gas Furnaces</msg>
+<status status="PASS" endtime="20190905 16:27:52.950" starttime="20190905 16:27:52.949"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:04:56.871" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:04:57.107" starttime="20190905 14:04:56.870"></status>
+<msg timestamp="20190905 16:27:52.951" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:27:53.194" starttime="20190905 16:27:52.950"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:05:02.108" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:05:02.108" starttime="20190905 14:04:57.108"></status>
+<msg timestamp="20190905 16:27:58.195" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:27:58.195" starttime="20190905 16:27:53.194"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:05:02.109" level="INFO">Clicking link 'Gas Furnaces'.</msg>
-<status status="PASS" endtime="20190905 14:05:36.615" starttime="20190905 14:05:02.108"></status>
+<msg timestamp="20190905 16:27:58.197" level="INFO">Clicking link 'Gas Furnaces'.</msg>
+<status status="PASS" endtime="20190905 16:28:10.490" starttime="20190905 16:27:58.196"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:05:38.616" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:05:38.616" starttime="20190905 14:05:36.615"></status>
+<msg timestamp="20190905 16:28:12.491" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:28:12.491" starttime="20190905 16:28:10.490"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:05:38.672" starttime="20190905 14:05:38.616"></status>
+<status status="PASS" endtime="20190905 16:28:12.570" starttime="20190905 16:28:12.491"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -1338,35 +1338,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:05:38.675" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:28:12.574" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:05:38.683" starttime="20190905 14:05:38.673"></status>
+<status status="PASS" endtime="20190905 16:28:12.581" starttime="20190905 16:28:12.572"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:05:38.683" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:05:38.684" starttime="20190905 14:05:38.683"></status>
+<msg timestamp="20190905 16:28:12.582" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:28:12.582" starttime="20190905 16:28:12.581"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:05:38.684" starttime="20190905 14:05:38.672"></status>
+<status status="PASS" endtime="20190905 16:28:12.582" starttime="20190905 16:28:12.571"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:05:48.685" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:05:48.685" starttime="20190905 14:05:38.684"></status>
+<msg timestamp="20190905 16:28:22.597" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:28:22.597" starttime="20190905 16:28:12.582"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:05:49.181" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:05:49.181" starttime="20190905 14:05:48.685"></status>
+<msg timestamp="20190905 16:28:23.536" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:28:23.537" starttime="20190905 16:28:22.597"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:05:49.181" starttime="20190905 14:04:56.868"></status>
+<status status="PASS" endtime="20190905 16:28:23.537" starttime="20190905 16:27:52.949"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Heat Pumps">
 <kw name="Log" library="BuiltIn">
@@ -1374,47 +1374,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:05:49.182" level="INFO">clicking Heat Pumps</msg>
-<status status="PASS" endtime="20190905 14:05:49.182" starttime="20190905 14:05:49.182"></status>
+<msg timestamp="20190905 16:28:23.539" level="INFO">clicking Heat Pumps</msg>
+<status status="PASS" endtime="20190905 16:28:23.540" starttime="20190905 16:28:23.538"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:05:49.183" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:05:49.420" starttime="20190905 14:05:49.183"></status>
+<msg timestamp="20190905 16:28:23.541" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:28:24.163" starttime="20190905 16:28:23.540"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:05:54.421" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:05:54.421" starttime="20190905 14:05:49.421"></status>
+<msg timestamp="20190905 16:28:29.164" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:28:29.164" starttime="20190905 16:28:24.164"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:05:54.422" level="INFO">Clicking link 'Heat Pumps'.</msg>
-<status status="PASS" endtime="20190905 14:05:59.816" starttime="20190905 14:05:54.421"></status>
+<msg timestamp="20190905 16:28:29.165" level="INFO">Clicking link 'Heat Pumps'.</msg>
+<status status="PASS" endtime="20190905 16:28:47.223" starttime="20190905 16:28:29.164"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:06:01.818" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:06:01.818" starttime="20190905 14:05:59.816"></status>
+<msg timestamp="20190905 16:28:49.225" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:28:49.225" starttime="20190905 16:28:47.224"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:06:01.861" starttime="20190905 14:06:01.818"></status>
+<status status="PASS" endtime="20190905 16:28:49.621" starttime="20190905 16:28:49.226"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -1425,35 +1425,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:06:01.865" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:28:49.628" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:06:01.874" starttime="20190905 14:06:01.862"></status>
+<status status="PASS" endtime="20190905 16:28:49.649" starttime="20190905 16:28:49.623"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:06:01.875" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:06:01.875" starttime="20190905 14:06:01.874"></status>
+<msg timestamp="20190905 16:28:49.651" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:28:49.651" starttime="20190905 16:28:49.650"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:06:01.875" starttime="20190905 14:06:01.861"></status>
+<status status="PASS" endtime="20190905 16:28:49.652" starttime="20190905 16:28:49.622"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:06:11.876" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:06:11.876" starttime="20190905 14:06:01.876"></status>
+<msg timestamp="20190905 16:28:59.653" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:28:59.653" starttime="20190905 16:28:49.652"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:06:12.346" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:06:12.346" starttime="20190905 14:06:11.876"></status>
+<msg timestamp="20190905 16:29:00.272" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:29:00.272" starttime="20190905 16:28:59.654"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:06:12.346" starttime="20190905 14:05:49.181"></status>
+<status status="PASS" endtime="20190905 16:29:00.272" starttime="20190905 16:28:23.538"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Rooftop Units">
 <kw name="Log" library="BuiltIn">
@@ -1461,47 +1461,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:06:12.347" level="INFO">clicking Rooftop Units</msg>
-<status status="PASS" endtime="20190905 14:06:12.347" starttime="20190905 14:06:12.347"></status>
+<msg timestamp="20190905 16:29:00.274" level="INFO">clicking Rooftop Units</msg>
+<status status="PASS" endtime="20190905 16:29:00.274" starttime="20190905 16:29:00.273"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:06:12.348" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:06:12.521" starttime="20190905 14:06:12.348"></status>
+<msg timestamp="20190905 16:29:00.276" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOhQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:29:00.542" starttime="20190905 16:29:00.275"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:06:17.522" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:06:17.522" starttime="20190905 14:06:12.521"></status>
+<msg timestamp="20190905 16:29:05.545" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:29:05.546" starttime="20190905 16:29:00.543"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:06:17.523" level="INFO">Clicking link 'Rooftop Units'.</msg>
-<status status="PASS" endtime="20190905 14:06:33.045" starttime="20190905 14:06:17.522"></status>
+<msg timestamp="20190905 16:29:05.549" level="INFO">Clicking link 'Rooftop Units'.</msg>
+<status status="PASS" endtime="20190905 16:29:26.205" starttime="20190905 16:29:05.548"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:06:35.046" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:06:35.046" starttime="20190905 14:06:33.045"></status>
+<msg timestamp="20190905 16:29:28.207" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:29:28.208" starttime="20190905 16:29:26.206"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:06:35.289" starttime="20190905 14:06:35.047"></status>
+<status status="PASS" endtime="20190905 16:29:28.469" starttime="20190905 16:29:28.208"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -1512,39 +1512,39 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:06:35.293" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:29:28.476" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:06:35.448" starttime="20190905 14:06:35.291"></status>
+<status status="PASS" endtime="20190905 16:29:28.640" starttime="20190905 16:29:28.471"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:06:35.449" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:06:35.449" starttime="20190905 14:06:35.448"></status>
+<msg timestamp="20190905 16:29:28.641" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:29:28.641" starttime="20190905 16:29:28.640"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:06:35.450" starttime="20190905 14:06:35.290"></status>
+<status status="PASS" endtime="20190905 16:29:28.642" starttime="20190905 16:29:28.470"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:06:45.451" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:06:45.451" starttime="20190905 14:06:35.450"></status>
+<msg timestamp="20190905 16:29:38.643" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:29:38.643" starttime="20190905 16:29:28.642"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:06:45.911" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:06:45.911" starttime="20190905 14:06:45.451"></status>
+<msg timestamp="20190905 16:29:39.284" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:29:39.284" starttime="20190905 16:29:38.644"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:06:45.911" starttime="20190905 14:06:12.346"></status>
+<status status="PASS" endtime="20190905 16:29:39.284" starttime="20190905 16:29:00.273"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:06:45.911" starttime="20190905 14:03:42.016"></status>
+<status status="PASS" endtime="20190905 16:29:39.285" starttime="20190905 16:26:07.975"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:06:45.912" starttime="20190905 14:03:42.015"></status>
+<status status="PASS" endtime="20190905 16:29:39.285" starttime="20190905 16:26:07.974"></status>
 </kw>
 <kw name="loopFOR" library="keywords_lib">
 <arguments>
@@ -1558,47 +1558,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:06:45.914" level="INFO">clicking Aftermarket Parts</msg>
-<status status="PASS" endtime="20190905 14:06:45.914" starttime="20190905 14:06:45.914"></status>
+<msg timestamp="20190905 16:29:39.288" level="INFO">clicking Aftermarket Parts</msg>
+<status status="PASS" endtime="20190905 16:29:39.288" starttime="20190905 16:29:39.287"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:06:45.915" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOiQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:06:46.130" starttime="20190905 14:06:45.915"></status>
+<msg timestamp="20190905 16:29:39.289" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOiQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:29:39.857" starttime="20190905 16:29:39.289"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:06:51.132" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:06:51.132" starttime="20190905 14:06:46.131"></status>
+<msg timestamp="20190905 16:29:44.864" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:29:44.865" starttime="20190905 16:29:39.858"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:06:51.133" level="INFO">Clicking link 'Aftermarket Parts'.</msg>
-<status status="PASS" endtime="20190905 14:07:12.664" starttime="20190905 14:06:51.132"></status>
+<msg timestamp="20190905 16:29:44.866" level="INFO">Clicking link 'Aftermarket Parts'.</msg>
+<status status="PASS" endtime="20190905 16:29:59.609" starttime="20190905 16:29:44.866"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:07:14.665" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:07:14.665" starttime="20190905 14:07:12.664"></status>
+<msg timestamp="20190905 16:30:01.612" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:30:01.612" starttime="20190905 16:29:59.610"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:07:14.730" starttime="20190905 14:07:14.665"></status>
+<status status="PASS" endtime="20190905 16:30:03.728" starttime="20190905 16:30:01.613"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -1609,35 +1609,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:07:14.735" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:30:03.734" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:07:14.744" starttime="20190905 14:07:14.732"></status>
+<status status="PASS" endtime="20190905 16:30:03.777" starttime="20190905 16:30:03.729"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:07:14.745" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:07:14.745" starttime="20190905 14:07:14.744"></status>
+<msg timestamp="20190905 16:30:03.778" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:30:03.779" starttime="20190905 16:30:03.778"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:07:14.745" starttime="20190905 14:07:14.731"></status>
+<status status="PASS" endtime="20190905 16:30:03.779" starttime="20190905 16:30:03.728"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:07:24.746" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:07:24.746" starttime="20190905 14:07:14.746"></status>
+<msg timestamp="20190905 16:30:13.780" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:30:13.780" starttime="20190905 16:30:03.780"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:07:25.237" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:07:25.237" starttime="20190905 14:07:24.746"></status>
+<msg timestamp="20190905 16:30:14.367" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:30:14.367" starttime="20190905 16:30:13.780"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:07:25.238" starttime="20190905 14:06:45.913"></status>
+<status status="PASS" endtime="20190905 16:30:14.367" starttime="20190905 16:29:39.287"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Commercial Parts">
 <kw name="Log" library="BuiltIn">
@@ -1645,47 +1645,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:07:25.239" level="INFO">clicking Commercial Parts</msg>
-<status status="PASS" endtime="20190905 14:07:25.239" starttime="20190905 14:07:25.238"></status>
+<msg timestamp="20190905 16:30:14.368" level="INFO">clicking Commercial Parts</msg>
+<status status="PASS" endtime="20190905 16:30:14.369" starttime="20190905 16:30:14.368"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:07:25.240" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOiQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:07:25.444" starttime="20190905 14:07:25.239"></status>
+<msg timestamp="20190905 16:30:14.369" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOiQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:30:14.728" starttime="20190905 16:30:14.369"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:07:30.445" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:07:30.445" starttime="20190905 14:07:25.445"></status>
+<msg timestamp="20190905 16:30:19.730" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:30:19.730" starttime="20190905 16:30:14.729"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:07:30.446" level="INFO">Clicking link 'Commercial Parts'.</msg>
-<status status="PASS" endtime="20190905 14:07:55.051" starttime="20190905 14:07:30.445"></status>
+<msg timestamp="20190905 16:30:19.732" level="INFO">Clicking link 'Commercial Parts'.</msg>
+<status status="PASS" endtime="20190905 16:30:29.078" starttime="20190905 16:30:19.731"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:07:57.052" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:07:57.052" starttime="20190905 14:07:55.052"></status>
+<msg timestamp="20190905 16:30:31.102" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:30:31.103" starttime="20190905 16:30:29.078"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:07:57.181" starttime="20190905 14:07:57.052"></status>
+<status status="PASS" endtime="20190905 16:30:31.557" starttime="20190905 16:30:31.103"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -1696,35 +1696,35 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:07:57.184" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:30:31.562" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:07:57.192" starttime="20190905 14:07:57.182"></status>
+<status status="PASS" endtime="20190905 16:30:31.658" starttime="20190905 16:30:31.558"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:07:57.193" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:07:57.193" starttime="20190905 14:07:57.193"></status>
+<msg timestamp="20190905 16:30:31.659" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:30:31.660" starttime="20190905 16:30:31.659"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:07:57.194" starttime="20190905 14:07:57.181"></status>
+<status status="PASS" endtime="20190905 16:30:31.660" starttime="20190905 16:30:31.557"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:08:07.195" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:08:07.195" starttime="20190905 14:07:57.194"></status>
+<msg timestamp="20190905 16:30:41.697" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:30:41.698" starttime="20190905 16:30:31.661"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:08:07.657" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:08:07.658" starttime="20190905 14:08:07.195"></status>
+<msg timestamp="20190905 16:30:42.549" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:30:42.549" starttime="20190905 16:30:41.698"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:08:07.658" starttime="20190905 14:07:25.238"></status>
+<status status="PASS" endtime="20190905 16:30:42.549" starttime="20190905 16:30:14.367"></status>
 </kw>
 <kw type="foritem" name="${subcat} = Residential Parts">
 <kw name="Log" library="BuiltIn">
@@ -1732,47 +1732,47 @@ Without any arguments.</msg>
 <arguments>
 <arg>clicking ${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:08:07.659" level="INFO">clicking Residential Parts</msg>
-<status status="PASS" endtime="20190905 14:08:07.659" starttime="20190905 14:08:07.658"></status>
+<msg timestamp="20190905 16:30:42.551" level="INFO">clicking Residential Parts</msg>
+<status status="PASS" endtime="20190905 16:30:42.551" starttime="20190905 16:30:42.550"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath:${element}</arg>
 </arguments>
-<msg timestamp="20190905 14:08:07.660" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOiQAI"]/h5/span/span/i'.</msg>
-<status status="PASS" endtime="20190905 14:08:07.846" starttime="20190905 14:08:07.659"></status>
+<msg timestamp="20190905 16:30:42.553" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOiQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190905 16:30:43.392" starttime="20190905 16:30:42.552"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 14:08:12.847" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 14:08:12.847" starttime="20190905 14:08:07.846"></status>
+<msg timestamp="20190905 16:30:48.394" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:30:48.394" starttime="20190905 16:30:43.393"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>${subcat}</arg>
 </arguments>
-<msg timestamp="20190905 14:08:12.848" level="INFO">Clicking link 'Residential Parts'.</msg>
-<status status="PASS" endtime="20190905 14:08:30.542" starttime="20190905 14:08:12.847"></status>
+<msg timestamp="20190905 16:30:48.395" level="INFO">Clicking link 'Residential Parts'.</msg>
+<status status="PASS" endtime="20190905 16:30:57.453" starttime="20190905 16:30:48.395"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190905 14:08:32.608" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190905 14:08:32.609" starttime="20190905 14:08:30.543"></status>
+<msg timestamp="20190905 16:30:59.455" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190905 16:30:59.455" starttime="20190905 16:30:57.454"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is visible.</doc>
 <arguments>
 <arg>xpath://button[@id='cc_sort_name_dropdown']</arg>
 </arguments>
-<status status="PASS" endtime="20190905 14:08:32.729" starttime="20190905 14:08:32.610"></status>
+<status status="PASS" endtime="20190905 16:30:59.958" starttime="20190905 16:30:59.456"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -1783,39 +1783,39 @@ Without any arguments.</msg>
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 14:08:32.733" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:31:00.525" level="INFO">Executing JavaScript:
 window.scrollBy(0,400);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 14:08:32.745" starttime="20190905 14:08:32.730"></status>
+<status status="PASS" endtime="20190905 16:31:00.561" starttime="20190905 16:30:59.960"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 14:08:32.746" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 14:08:32.746" starttime="20190905 14:08:32.745"></status>
+<msg timestamp="20190905 16:31:00.563" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:31:00.563" starttime="20190905 16:31:00.562"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:08:32.746" starttime="20190905 14:08:32.729"></status>
+<status status="PASS" endtime="20190905 16:31:00.564" starttime="20190905 16:30:59.959"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20190905 14:08:42.747" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" endtime="20190905 14:08:42.747" starttime="20190905 14:08:32.746"></status>
+<msg timestamp="20190905 16:31:10.703" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190905 16:31:10.704" starttime="20190905 16:31:00.565"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190905 14:08:43.287" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20190905 14:08:43.287" starttime="20190905 14:08:42.748"></status>
+<msg timestamp="20190905 16:31:12.549" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190905 16:31:12.550" starttime="20190905 16:31:10.705"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:08:43.287" starttime="20190905 14:08:07.658"></status>
+<status status="PASS" endtime="20190905 16:31:12.550" starttime="20190905 16:30:42.550"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:08:43.287" starttime="20190905 14:06:45.913"></status>
+<status status="PASS" endtime="20190905 16:31:12.550" starttime="20190905 16:29:39.287"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:08:43.288" starttime="20190905 14:06:45.912"></status>
+<status status="PASS" endtime="20190905 16:31:12.551" starttime="20190905 16:29:39.285"></status>
 </kw>
 <doc>Step1 -As a user logged in to UPG store
 Step2-User click on Catagory trees one by one
@@ -1823,15 +1823,15 @@ Step3-User click on each Filters for PLP list items one by one</doc>
 <tags>
 <tag>UPG</tag>
 </tags>
-<status status="PASS" endtime="20190905 14:08:43.288" critical="yes" starttime="20190905 13:57:23.443"></status>
+<status status="PASS" endtime="20190905 16:31:12.790" critical="yes" starttime="20190905 16:17:40.989"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20190905 14:08:47.303" starttime="20190905 14:08:43.291"></status>
+<status status="PASS" endtime="20190905 16:31:27.227" starttime="20190905 16:31:14.321"></status>
 </kw>
-<status status="PASS" endtime="20190905 14:08:47.303" starttime="20190905 13:56:34.310"></status>
+<status status="PASS" endtime="20190905 16:31:27.227" starttime="20190905 16:14:25.039"></status>
 </suite>
-<status status="PASS" endtime="20190905 14:08:47.308" starttime="20190905 13:56:34.244"></status>
+<status status="PASS" endtime="20190905 16:31:27.247" starttime="20190905 16:14:24.928"></status>
 </suite>
 <statistics>
 <total>

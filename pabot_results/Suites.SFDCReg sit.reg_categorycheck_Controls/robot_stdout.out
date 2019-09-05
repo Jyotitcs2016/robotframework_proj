@@ -3,17 +3,14 @@ Suites
 ==============================================================================
 Suites.SFDCReg sit :: SFDC Regression                                         
 ==============================================================================
-reg_categorycheck_Controls :: Step1 -As a user logged in to Contro... | FAIL |
-WebDriverException: Message: unknown error: Element <a href="javascript:void(0);" onclick="CCRZ.goToPLP(this)" class="cc_cat_name" data-category="{&quot;name&quot;:&quot;...&quot;,&quot;friendlyUrl&quot;:&quot;/Airflow Measuring Stations&quot;,&quot;productCount&quot;:79,&quot;parentCategory&quot;:&quot;a8d4A000000023dQAA&quot;,&quot;sequence&quot;:500,&quot;ownerId&quot;:&quot;005G0000007ZmD3IAK&quot;,&quot;categoryID&quot;:&quot;40004&quot;,&quot;sfid&quot;:&quot;a8d4A0000000AAZQA2&quot;}">Airflow Measuring Stations</a> is not clickable at point (195, 8). Other element would receive the click: <div id="overlay" class="modal-backdrop fade in" style="display: block;"></div>
-  (Session info: chrome=76.0.3809.132)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.3.9600 x86)
+reg_categorycheck_Controls :: Step1 -As a user logged in to Contro... | PASS |
 ------------------------------------------------------------------------------
-Suites.SFDCReg sit :: SFDC Regression                                 | FAIL |
-1 critical test, 0 passed, 1 failed
-1 test total, 0 passed, 1 failed
+Suites.SFDCReg sit :: SFDC Regression                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
 ==============================================================================
-Suites                                                                | FAIL |
-1 critical test, 0 passed, 1 failed
-1 test total, 0 passed, 1 failed
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\JPP\Documents\Testing\Robot\pabot_results\Suites.SFDCReg sit.reg_categorycheck_Controls\output.xml

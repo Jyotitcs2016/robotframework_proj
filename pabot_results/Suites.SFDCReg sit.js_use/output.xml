@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190905 13:55:20.224" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<robot rpa="false" generated="20190905 16:14:24.994" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
 <suite id="s1" name="Suites">
 <suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot" id="s1-s1" name="SFDCReg sit">
 <kw type="setup" name="loginSFDC" library="keywords_lib">
@@ -13,19 +13,19 @@
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190905 13:55:20.863" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
-<status status="PASS" endtime="20190905 13:55:49.813" starttime="20190905 13:55:20.863"></status>
+<msg timestamp="20190905 16:14:26.401" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190905 16:15:50.161" starttime="20190905 16:14:26.399"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190905 13:55:50.945" starttime="20190905 13:55:49.813"></status>
+<status status="PASS" endtime="20190905 16:15:52.185" starttime="20190905 16:15:50.162"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>20s</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:55:50.948" starttime="20190905 13:55:50.946"></status>
+<status status="PASS" endtime="20190905 16:15:52.343" starttime="20190905 16:15:52.186"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -33,8 +33,8 @@
 <arg>css:input#username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190905 13:55:50.949" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
-<status status="PASS" endtime="20190905 13:55:51.675" starttime="20190905 13:55:50.949"></status>
+<msg timestamp="20190905 16:15:52.345" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
+<status status="PASS" endtime="20190905 16:15:59.575" starttime="20190905 16:15:52.344"></status>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <doc>Types the given password into text field identified by ``locator``.</doc>
@@ -42,25 +42,25 @@
 <arg>css:input#password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190905 13:55:51.676" level="INFO">Typing password into text field 'css:input#password'.</msg>
-<status status="PASS" endtime="20190905 13:55:52.066" starttime="20190905 13:55:51.676"></status>
+<msg timestamp="20190905 16:15:59.576" level="INFO">Typing password into text field 'css:input#password'.</msg>
+<status status="PASS" endtime="20190905 16:16:02.037" starttime="20190905 16:15:59.575"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` is enabled.</doc>
 <arguments>
 <arg>css:input#Login</arg>
 </arguments>
-<status status="PASS" endtime="20190905 13:55:52.131" starttime="20190905 13:55:52.066"></status>
+<status status="PASS" endtime="20190905 16:16:02.870" starttime="20190905 16:16:02.037"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>css:input#Login</arg>
 </arguments>
-<msg timestamp="20190905 13:55:52.132" level="INFO">Clicking button 'css:input#Login'.</msg>
-<status status="PASS" endtime="20190905 13:56:24.179" starttime="20190905 13:55:52.132"></status>
+<msg timestamp="20190905 16:16:02.871" level="INFO">Clicking button 'css:input#Login'.</msg>
+<status status="PASS" endtime="20190905 16:17:29.319" starttime="20190905 16:16:02.871"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:56:24.180" starttime="20190905 13:55:20.862"></status>
+<status status="PASS" endtime="20190905 16:17:29.320" starttime="20190905 16:14:26.398"></status>
 </kw>
 <test id="s1-s1-t1" name="js_use">
 <kw name="Get Vertical Position" library="SeleniumLibrary">
@@ -71,8 +71,8 @@
 <assign>
 <var>${Get Vertical Position}</var>
 </assign>
-<msg timestamp="20190905 13:56:24.332" level="INFO">${Get Vertical Position} = 1105.0</msg>
-<status status="PASS" endtime="20190905 13:56:24.333" starttime="20190905 13:56:24.182"></status>
+<msg timestamp="20190905 16:17:31.170" level="INFO">${Get Vertical Position} = 1105.0</msg>
+<status status="PASS" endtime="20190905 16:17:31.170" starttime="20190905 16:17:29.322"></status>
 </kw>
 <kw name="Get Horizontal Position" library="SeleniumLibrary">
 <doc>Returns horizontal position of element identified by ``locator``.</doc>
@@ -82,16 +82,16 @@
 <assign>
 <var>${Get horizontal Position}</var>
 </assign>
-<msg timestamp="20190905 13:56:24.356" level="INFO">${Get horizontal Position} = 511.0</msg>
-<status status="PASS" endtime="20190905 13:56:24.356" starttime="20190905 13:56:24.333"></status>
+<msg timestamp="20190905 16:17:32.121" level="INFO">${Get horizontal Position} = 511.0</msg>
+<status status="PASS" endtime="20190905 16:17:32.121" starttime="20190905 16:17:31.171"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>vertical ${Get Vertical Position} pixels,horizon ${Get horizontal Position} pixels</arg>
 </arguments>
-<msg timestamp="20190905 13:56:24.357" level="INFO">vertical 1105.0 pixels,horizon 511.0 pixels</msg>
-<status status="PASS" endtime="20190905 13:56:24.358" starttime="20190905 13:56:24.357"></status>
+<msg timestamp="20190905 16:17:32.122" level="INFO">vertical 1105.0 pixels,horizon 511.0 pixels</msg>
+<status status="PASS" endtime="20190905 16:17:32.123" starttime="20190905 16:17:32.121"></status>
 </kw>
 <kw name="js_script" library="keywords_lib">
 <arguments>
@@ -102,39 +102,39 @@
 <arguments>
 <arg>window.scrollBy${scrolldown};</arg>
 </arguments>
-<msg timestamp="20190905 13:56:24.361" level="INFO">Executing JavaScript:
+<msg timestamp="20190905 16:17:32.129" level="INFO">Executing JavaScript:
 window.scrollBy(0,1500);
 Without any arguments.</msg>
-<status status="PASS" endtime="20190905 13:56:24.379" starttime="20190905 13:56:24.359"></status>
+<status status="PASS" endtime="20190905 16:17:32.946" starttime="20190905 16:17:32.124"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>scrolled</arg>
 </arguments>
-<msg timestamp="20190905 13:56:24.380" level="INFO">scrolled</msg>
-<status status="PASS" endtime="20190905 13:56:24.380" starttime="20190905 13:56:24.379"></status>
+<msg timestamp="20190905 16:17:32.946" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190905 16:17:32.947" starttime="20190905 16:17:32.946"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:56:24.380" starttime="20190905 13:56:24.358"></status>
+<status status="PASS" endtime="20190905 16:17:32.947" starttime="20190905 16:17:32.123"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20190905 13:56:29.381" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20190905 13:56:29.381" starttime="20190905 13:56:24.381"></status>
+<msg timestamp="20190905 16:17:38.019" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190905 16:17:38.020" starttime="20190905 16:17:32.948"></status>
 </kw>
-<status status="PASS" endtime="20190905 13:56:29.381" critical="yes" starttime="20190905 13:56:24.180"></status>
+<status status="PASS" endtime="20190905 16:17:38.020" critical="yes" starttime="20190905 16:17:29.320"></status>
 </test>
 <kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20190905 13:56:32.836" starttime="20190905 13:56:29.385"></status>
+<status status="PASS" endtime="20190905 16:18:41.380" starttime="20190905 16:17:38.023"></status>
 </kw>
 <doc>SFDC Regression</doc>
-<status status="PASS" endtime="20190905 13:56:32.836" starttime="20190905 13:55:20.286"></status>
+<status status="PASS" endtime="20190905 16:18:41.380" starttime="20190905 16:14:25.109"></status>
 </suite>
-<status status="PASS" endtime="20190905 13:56:32.841" starttime="20190905 13:55:20.229"></status>
+<status status="PASS" endtime="20190905 16:18:41.387" starttime="20190905 16:14:25.013"></status>
 </suite>
 <statistics>
 <total>

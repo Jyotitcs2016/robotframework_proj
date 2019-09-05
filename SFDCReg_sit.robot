@@ -28,7 +28,7 @@ reg_categorycheck_Controls
     [Tags]    controls
     loginStorefront    Controls Parts Store
     Sleep    2s
-    loopThroughCats    (0,1500)
+    loopThroughCats    (0,2000)
 
 js_use
     ${Get Vertical Position}    Get Vertical Position    xpath://img[@id='01aG0000001OjLJImg']

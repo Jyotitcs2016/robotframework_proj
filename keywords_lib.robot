@@ -56,7 +56,7 @@ loopThroughCats
     : FOR    ${tab}    IN    @{controls_cat}
     \    sleep    5s
     \    Click Link    ${tab}
-    \    Sleep    5s
+    \    Sleep    10s
     \    Wait Until Element Is Enabled    xpath://button[@id='cc_sort_name_dropdown']    timeout=20s    error=unknown error
     \    js_script    ${scrolldown}
     \    Capture Page Screenshot
