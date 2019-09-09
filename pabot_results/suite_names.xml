@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190905 16:14:19.565" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<robot rpa="false" generated="20190908 22:42:15.392" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
 <suite id="s1" name="Suites">
 <suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot" id="s1-s1" name="SFDCReg sit">
 <kw type="setup" name="loginSFDC" library="keywords_lib">
 <arguments>
-<arg>gc</arg>
+<arg>${browser}</arg>
 <arg>${username}</arg>
 </arguments>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190905 16:14:23.381" starttime="20190905 16:14:23.381"></status>
+<status status="NOT_RUN" endtime="20190908 22:42:15.936" starttime="20190908 22:42:15.935"></status>
 </kw>
-<status status="PASS" endtime="20190905 16:14:23.382" starttime="20190905 16:14:23.380"></status>
+<status status="PASS" endtime="20190908 22:42:15.936" starttime="20190908 22:42:15.934"></status>
 </kw>
 <test id="s1-s1-t1" name="reg_categorycheck_UPG">
+<kw type="setup" name="Set Screenshot Directory" library="Screenshot">
+<doc>Sets the directory where screenshots are saved.</doc>
+<arguments>
+<arg>C:\\Users\\JPP\\Documents\\Testing\\Robot/screenshots</arg>
+</arguments>
+<status status="NOT_RUN" endtime="20190908 22:42:15.938" starttime="20190908 22:42:15.937"></status>
+</kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190905 16:14:23.385" starttime="20190905 16:14:23.385"></status>
+<status status="NOT_RUN" endtime="20190908 22:42:15.938" starttime="20190908 22:42:15.938"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190908 22:42:15.939" starttime="20190908 22:42:15.938"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20190908 22:42:15.939" starttime="20190908 22:42:15.939"></status>
 </kw>
 <doc>Step1 -As a user logged in to UPG store
 Step2-User click on Catagory trees one by one
@@ -24,87 +39,67 @@ Step3-User click on each Filters for PLP list items one by one</doc>
 <tags>
 <tag>UPG</tag>
 </tags>
-<status status="PASS" endtime="20190905 16:14:23.385" critical="yes" starttime="20190905 16:14:23.382"></status>
+<status status="PASS" endtime="20190908 22:42:15.939" critical="yes" starttime="20190908 22:42:15.936"></status>
 </test>
-<test id="s1-s1-t2" name="reg_categorycheck_Controls">
-<kw name="No Operation" library="BuiltIn">
-<doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190905 16:14:23.387" starttime="20190905 16:14:23.387"></status>
-</kw>
-<doc>Step1 -As a user logged in to Controls store
-Step2-User click on Catagory trees one by one
-Step3-User click on each Filters for PLP list items one by one</doc>
-<tags>
-<tag>controls</tag>
-</tags>
-<status status="PASS" endtime="20190905 16:14:23.388" critical="yes" starttime="20190905 16:14:23.386"></status>
-</test>
-<test id="s1-s1-t3" name="js_use">
-<kw name="No Operation" library="BuiltIn">
-<doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190905 16:14:23.389" starttime="20190905 16:14:23.389"></status>
-</kw>
-<status status="PASS" endtime="20190905 16:14:23.390" critical="yes" starttime="20190905 16:14:23.388"></status>
-</test>
-<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="NOT_RUN" endtime="20190905 16:14:23.391" starttime="20190905 16:14:23.391"></status>
-</kw>
 <doc>SFDC Regression</doc>
-<status status="PASS" endtime="20190905 16:14:23.391" starttime="20190905 16:14:19.648"></status>
+<status status="PASS" endtime="20190908 22:42:15.940" starttime="20190908 22:42:15.441"></status>
 </suite>
 <suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot" id="s1-s2" name="SFDCReg uat">
 <kw type="setup" name="loginSFDC" library="keywords_lib">
 <arguments>
-<arg>gc</arg>
+<arg>${browser}</arg>
 <arg>${userid_uat}</arg>
 </arguments>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190905 16:14:23.410" starttime="20190905 16:14:23.410"></status>
+<status status="NOT_RUN" endtime="20190908 22:42:15.957" starttime="20190908 22:42:15.957"></status>
 </kw>
-<status status="PASS" endtime="20190905 16:14:23.411" starttime="20190905 16:14:23.409"></status>
+<status status="PASS" endtime="20190908 22:42:15.957" starttime="20190908 22:42:15.956"></status>
 </kw>
 <test id="s1-s2-t1" name="reg_categorycheck_UPG_UAT">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190905 16:14:23.413" starttime="20190905 16:14:23.413"></status>
+<status status="NOT_RUN" endtime="20190908 22:42:15.959" starttime="20190908 22:42:15.959"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190908 22:42:15.959" starttime="20190908 22:42:15.959"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20190908 22:42:15.960" starttime="20190908 22:42:15.960"></status>
 </kw>
 <doc>Step1 -As a user logged in to UPG store
 Step2-User click on Catagory trees one by one
 Step3-User click on each Filters for PLP list items one by one</doc>
 <tags>
+<tag>uat</tag>
 <tag>UPG</tag>
 </tags>
-<status status="PASS" endtime="20190905 16:14:23.414" critical="yes" starttime="20190905 16:14:23.412"></status>
+<status status="PASS" endtime="20190908 22:42:15.960" critical="yes" starttime="20190908 22:42:15.957"></status>
 </test>
-<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="NOT_RUN" endtime="20190905 16:14:23.415" starttime="20190905 16:14:23.415"></status>
-</kw>
-<status status="PASS" endtime="20190905 16:14:23.415" starttime="20190905 16:14:23.394"></status>
+<status status="PASS" endtime="20190908 22:42:15.961" starttime="20190908 22:42:15.942"></status>
 </suite>
-<status status="PASS" endtime="20190905 16:14:23.419" starttime="20190905 16:14:19.573"></status>
+<status status="PASS" endtime="20190908 22:42:15.963" starttime="20190908 22:42:15.398"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="4">Critical Tests</stat>
-<stat fail="0" pass="4">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">controls</stat>
+<stat fail="0" pass="1">uat</stat>
 <stat fail="0" pass="2">UPG</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Suites" pass="4">Suites</stat>
-<stat fail="0" id="s1-s1" name="SFDCReg sit" pass="3">Suites.SFDCReg sit</stat>
+<stat fail="0" id="s1" name="Suites" pass="2">Suites</stat>
+<stat fail="0" id="s1-s1" name="SFDCReg sit" pass="1">Suites.SFDCReg sit</stat>
 <stat fail="0" id="s1-s2" name="SFDCReg uat" pass="1">Suites.SFDCReg uat</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190905 16:14:19.374" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot': Non-existing setting ''.</msg>
-<msg timestamp="20190905 16:14:19.379" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot': Non-existing setting ''.</msg>
-<msg timestamp="20190905 16:14:22.982" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\locators_file.robot': Non-existing setting ''.</msg>
-<msg timestamp="20190905 16:14:23.394" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190908 22:42:15.375" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190908 22:42:15.381" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190908 22:42:15.774" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\locators_file.robot': Non-existing setting ''.</msg>
 </errors>
 </robot>

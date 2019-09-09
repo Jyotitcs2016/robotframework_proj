@@ -21,3 +21,38 @@ ${password}       Jyoti@1995
 ...               Room Pressure Monitors    Security Devices    Standard Panels    Starters    Temperature and Humidity Sensors    Temperature Switches    Thermostats
 ...               Valves    Variable Speed Drives    Verasys Controls    Water Flow Sensors    Miscellaneous
 ${userid_uat}     jyotiprakash.panda-ext@jci.com.uat
+${ch_id0}         //*[@id="a8dG0000000KylqIAC"]/h5/span/span/i
+${ch_id1}         //*[@id="a8dG0000000KylsIAC"]/h5/span/span/i
+${ch_id2}         //*[@id="a8dG0000000KylwIAC"]/h5/span/span/i
+${ch_id3}         //*[@id="a8dG0000000KylyIAC"]/h5/span/span/i
+${ch_id4}         //*[@id="a8dG0000000Kym1IAC"]/h5/span/span/i
+${ch_id5}         //*[@id="a8dG0000000Kym8IAC"]/h5/span/span/i
+${ch_id6}         //*[@id="a8dG0000000Kym4IAC"]/h5/span/span/i
+${ch_id7}         //*[@id="a8dG0000000KyloIAC"]/h5/span/span/i
+${ch_id8}         //*[@id="a8dG0000000KylnIAC"]/h5/span/span/i
+@{ch_cat0}        Centrifugal Compressors    Reciprocating Compressors    Screw Compressors    Scroll Compressors
+@{ch_cat1}        Angles    Ball Joints    Bearings    Casings    Castings    Collars    Couplings
+...               Covers    Crankshafts    Eliminators    Filters, Oil    Flywheels    Gaskets    Gears
+...               Impellars    Kits    Miscellaneous    Mufflers    Orifices    O-Rings    Pistons
+...               Pumps and Parts    Rotor Assemblies    Rupture/Burst Disks    Shafts    Shims    Spacers    Springs
+...               Unloader Parts    Valves    YMC2 Chiller Parts    York Semi Hermetic Screw Parts    Flywheels
+@{ch_cat2}        Adhesives    Lubricants and Sealants    Oil.    Paint    Motors
+@{ch_cat3}        Eductors, Oil    Oil Separators    Capillaries    Float and Float Parts    Indicators    Miscellaneous    Thermostatic Expansion Valves
+...               Valves
+@{ch_cat4}        Condenser Coils    Condenser Water Coils    Cooler, Oil    Cooler, Water    Evaporator Coils    Headers    Heaters
+...               Miscellaneous    Steam Coils
+@{ch_cat5}        Codekits    Air-Mod III Parts    Micro Panel Parts    Gauges    ISN Controls and Parts    Miscellaneous    Monitors
+...               Pressure Controls    Thermometers and Temperature Control    Valves    Annunciators    Bulbs    Capacitors    Circuit Breakers
+...               Coils and Solenoids    Contactors    Control Boards    Electrical Sockets    Electronic Boards    Fuses    Heaters
+...               Miscellaneous    Panel Box Controls    Receptacles    Relays    Resistors    Switches    Time Delay Relays
+...               Transformers    Turbo Mod Parts    Valves    Starters    Thermometers and Temperature Control    Thermostats    # Controls and Electrical
+@{ch_cat6}        Belts    Filters, Air    Air Handler Cone    Bearings    Blower Wheels and Assemblies    Dampers    Fan Blades
+...               Fan Guards    Grilles    Miscellaneous    Refrigeration Parts    Shafts, Wheels and Assemblies
+@{ch_cat7}        Adaptors, Fittings, Connections    Bolts    Caps and Sealing Flares    Clamps    Clips    Flanges    Hardware, Locks, Hinges, and Handles
+...               Insulation    Miscellaneous    New Items    Pumps and Parts    Screws    Consumable-Spares    Bushings
+...               External Equalizer Lines    Miscellaneous    Nuts, Washers    Couplings    Isolators    Miscellaneous    Piping
+...               Panels and Brackets    Residential Parts    Pumps and Parts    Tools    # Hardware
+@{ch_cat8}        Miscellaneous    Refrigeration Storage and Recycling Parts    Speed Increaser Parts    Backup Batteries    Fabricated Parts    Instructions    Labels
+...               NamePlates    PM Kits    # General
+${locator_plp_upg}    xpath://div[@class="panel-body cc_body"]/h4
+${browser}        gc

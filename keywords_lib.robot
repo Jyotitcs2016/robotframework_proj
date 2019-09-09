@@ -30,15 +30,18 @@ loginStorefront
     Click Link    ${storefront}
 
 loopFOR
-    [Arguments]    ${element}    @{cat}
+    [Arguments]    ${element}    ${locator}    @{cat}
     : FOR    ${subcat}    IN    @{cat}
+    \    Wait Until Element Is Visible    xpath:${element}    timeout=20s
     \    Log    clicking ${subcat}
     \    Click Element    xpath:${element}
+    \    retry_element    xpath:${element}
     \    Sleep    5s
     \    Click Link    ${subcat}
     \    Sleep    2s
-    \    Wait Until Element Is Visible    xpath://button[@id='cc_sort_name_dropdown']
+    \    Wait Until Element Is Visible    xpath://button[@id='cc_sort_name_dropdown']    timeout=20s
     \    js_script    (0,400)
+    \    plp_check    ${locator}    ${subcat}
     \    Sleep    10s
     \    Capture Page Screenshot
 
@@ -47,16 +50,45 @@ js_script
     Execute Javascript    window.scrollBy${scrolldown};
     log    scrolled
 
-js_plp_check
-    ${var}=    Execute Javascript    ${CURDIR}/plp_check.js
-    \    [Return]    ${var}
+plp_check
+    [Arguments]    ${locator}    ${subcat}    # locator xpath or css
+    ${element_present}=    Run Keyword And Return Status    Element Should Be Visible    ${locator}
+    Run Keyword If    ${element_present}    log    ${subcat}: PLP is not working
 
 loopThroughCats
-    [Arguments]    ${scrolldown}
+    [Arguments]    ${scrolldown}    ${locator}
     : FOR    ${tab}    IN    @{controls_cat}
     \    sleep    5s
     \    Click Link    ${tab}
+    \    retry_error    ${tab}
     \    Sleep    10s
     \    Wait Until Element Is Enabled    xpath://button[@id='cc_sort_name_dropdown']    timeout=20s    error=unknown error
     \    js_script    ${scrolldown}
+    \    plp_check    ${locator}    ${tab}
     \    Capture Page Screenshot
+
+Login to Chiller Store
+    loginStorefront    York Genuine Parts Store
+
+Check each category on store
+    loopFOR    ${ch_id0}    ${locator_plp_upg}    @{ch_cat0}
+    loopFOR    ${ch_id1}    ${locator_plp_upg}    @{ch_cat1}
+    loopFOR    ${ch_id2}    ${locator_plp_upg}    @{ch_cat2}
+    loopFOR    ${ch_id3}    ${locator_plp_upg}    @{ch_cat3}
+    loopFOR    ${ch_id4}    ${locator_plp_upg}    @{ch_cat4}
+    loopFOR    ${ch_id5}    ${locator_plp_upg}    @{ch_cat5}
+    loopFOR    ${ch_id6}    ${locator_plp_upg}    @{ch_cat6}
+    loopFOR    ${ch_id7}    ${locator_plp_upg}    @{ch_cat7}
+    loopFOR    ${ch_id8}    ${locator_plp_upg}    @{ch_cat8}
+
+retry_error
+    [Arguments]    ${link}
+    ${error_retry}=    Run Keyword And Ignore Error    Click Link    ${link}
+    Run Keyword If    ${error_retry}    Wait Until Keyword Succeeds    5x    10s    Click Link    ${link}
+    Continue For Loop If    ${error_retry}='FAIL'
+
+retry_element
+    [Arguments]    ${link}
+    ${error_retry}=    Run Keyword And Ignore Error    Click Element    ${link}
+    Run Keyword If    ${error_retry}    Wait Until Keyword Succeeds    5x    10s    Click Element    ${link}
+    Continue For Loop If    ${error_retry}='FAIL'

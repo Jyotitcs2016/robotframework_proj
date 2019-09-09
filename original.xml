@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190908 22:42:12.591" generator="Rebot 3.1.1 (Python 2.7.14 on win32)">
+<suite id="s1" name="Suites">
+<suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot" id="s1-s1" name="SFDCReg sit">
+<kw type="setup" name="loginSFDC" library="keywords_lib">
+<arguments>
+<arg>${browser}</arg>
+<arg>${username}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190908 22:39:50.783" level="INFO">Opening browser 'ie' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190908 22:39:59.470" starttime="20190908 22:39:50.782"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190908 22:39:59.487" starttime="20190908 22:39:59.471"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:39:59.502" starttime="20190908 22:39:59.487"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190908 22:39:59.503" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
+<status status="PASS" endtime="20190908 22:40:01.045" starttime="20190908 22:39:59.502"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190908 22:40:01.047" level="INFO">Typing password into text field 'css:input#password'.</msg>
+<status status="PASS" endtime="20190908 22:40:02.217" starttime="20190908 22:40:01.046"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>css:input#Login</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:40:02.558" starttime="20190908 22:40:02.218"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#Login</arg>
+</arguments>
+<msg timestamp="20190908 22:40:02.559" level="INFO">Clicking button 'css:input#Login'.</msg>
+<status status="PASS" endtime="20190908 22:40:03.357" starttime="20190908 22:40:02.558"></status>
+</kw>
+<status status="PASS" endtime="20190908 22:40:03.358" starttime="20190908 22:39:50.781"></status>
+</kw>
+<test id="s1-s1-t1" name="reg_categorycheck_UPG">
+<kw type="setup" name="Set Screenshot Directory" library="Screenshot">
+<doc>Sets the directory where screenshots are saved.</doc>
+<arguments>
+<arg>C:\\Users\\JPP\\Documents\\Testing\\Robot/screenshots</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:40:03.364" starttime="20190908 22:40:03.360"></status>
+</kw>
+<kw name="loginStorefront" library="keywords_lib">
+<arguments>
+<arg>Ducted Residential &amp; Commercial Systems, Ductless Systems &amp; Source 1 Parts Store</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://input[@id='phSearchInput']</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190908 22:40:24.090" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Suites.SFDCReg sit.reg_categorycheck_UPG-selenium-screenshot-1.png"&gt;&lt;img src="Suites.SFDCReg sit.reg_categorycheck_UPG-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190908 22:40:24.091" starttime="20190908 22:40:23.816"></status>
+</kw>
+<msg timestamp="20190908 22:40:24.093" level="FAIL">Element 'xpath://input[@id='phSearchInput']' not visible after 5 seconds.</msg>
+<status status="FAIL" endtime="20190908 22:40:24.093" starttime="20190908 22:40:03.365"></status>
+</kw>
+<status status="FAIL" endtime="20190908 22:40:24.094" starttime="20190908 22:40:03.365"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190908 22:40:27.133" starttime="20190908 22:40:24.095"></status>
+</kw>
+<doc>Step1 -As a user logged in to UPG store
+Step2-User click on Catagory trees one by one
+Step3-User click on each Filters for PLP list items one by one</doc>
+<tags>
+<tag>UPG</tag>
+</tags>
+<status status="FAIL" endtime="20190908 22:40:27.133" critical="yes" starttime="20190908 22:40:03.358">Element 'xpath://input[@id='phSearchInput']' not visible after 5 seconds.</status>
+</test>
+<doc>SFDC Regression</doc>
+<status status="FAIL" endtime="20190908 22:40:27.136" starttime="20190908 22:39:50.165"></status>
+</suite>
+<suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot" id="s1-s2" name="SFDCReg uat">
+<kw type="setup" name="loginSFDC" library="keywords_lib">
+<arguments>
+<arg>${browser}</arg>
+<arg>${userid_uat}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190908 22:39:50.783" level="INFO">Opening browser 'ie' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190908 22:39:59.575" starttime="20190908 22:39:50.782"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190908 22:39:59.593" starttime="20190908 22:39:59.575"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:39:59.608" starttime="20190908 22:39:59.594"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190908 22:39:59.609" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com.uat' into text field 'css:input#username'.</msg>
+<status status="PASS" endtime="20190908 22:40:01.468" starttime="20190908 22:39:59.609"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190908 22:40:01.469" level="INFO">Typing password into text field 'css:input#password'.</msg>
+<status status="PASS" endtime="20190908 22:40:02.635" starttime="20190908 22:40:01.468"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>css:input#Login</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:40:03.088" starttime="20190908 22:40:02.636"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#Login</arg>
+</arguments>
+<msg timestamp="20190908 22:40:03.089" level="INFO">Clicking button 'css:input#Login'.</msg>
+<status status="PASS" endtime="20190908 22:40:13.333" starttime="20190908 22:40:03.089"></status>
+</kw>
+<status status="PASS" endtime="20190908 22:40:13.333" starttime="20190908 22:39:50.781"></status>
+</kw>
+<test id="s1-s2-t1" name="reg_categorycheck_UPG_UAT">
+<kw name="loginStorefront" library="keywords_lib">
+<arguments>
+<arg>Ducted Residential &amp; Commercial Systems, Ductless Systems &amp; Source 1 Parts Store</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://input[@id='phSearchInput']</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:40:13.546" starttime="20190908 22:40:13.337"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id='phSearchInput']</arg>
+<arg>${account_type}</arg>
+</arguments>
+<msg timestamp="20190908 22:40:13.547" level="INFO">Typing text 'JCI Corporate General Account' into text field 'xpath://input[@id='phSearchInput']'.</msg>
+<status status="PASS" endtime="20190908 22:40:15.539" starttime="20190908 22:40:13.546"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>css:div#searchButtonContainer&gt;input</arg>
+</arguments>
+<msg timestamp="20190908 22:40:15.540" level="INFO">Clicking button 'css:div#searchButtonContainer&gt;input'.</msg>
+<status status="PASS" endtime="20190908 22:40:22.858" starttime="20190908 22:40:15.540"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]</arg>
+</arguments>
+<msg timestamp="20190908 22:40:22.859" level="INFO">Clicking element 'xpath://div[@id='Account_body']//a[contains(text(),'JCI Corporate General Account')]'.</msg>
+<status status="PASS" endtime="20190908 22:40:33.198" starttime="20190908 22:40:22.859"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="001G000001zNoUG_RelatedContactList_body"]/div/a[2]</arg>
+</arguments>
+<msg timestamp="20190908 22:40:33.199" level="INFO">Clicking element 'xpath://*[@id="001G000001zNoUG_RelatedContactList_body"]/div/a[2]'.</msg>
+<status status="PASS" endtime="20190908 22:40:37.973" starttime="20190908 22:40:33.198"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@class='listElementBottomNav']//span[@class='listItemPad'][contains(text(),'C')]</arg>
+</arguments>
+<msg timestamp="20190908 22:40:37.974" level="INFO">Clicking element 'xpath://div[@class='listElementBottomNav']//span[@class='listItemPad'][contains(text(),'C')]'.</msg>
+<status status="PASS" endtime="20190908 22:40:41.594" starttime="20190908 22:40:37.974"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[contains(text(),'Clarey, Spencer')]</arg>
+</arguments>
+<msg timestamp="20190908 22:40:41.595" level="INFO">Clicking element 'xpath://a[contains(text(),'Clarey, Spencer')]'.</msg>
+<status status="PASS" endtime="20190908 22:40:48.625" starttime="20190908 22:40:41.594"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>xpath://input[@name='new00NG000000FQZUq']</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:40:49.294" starttime="20190908 22:40:48.625"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://span[@id='workWithPortalCopyLabel']</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:40:49.528" starttime="20190908 22:40:49.295"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://span[@id='workWithPortalCopyLabel']</arg>
+</arguments>
+<msg timestamp="20190908 22:40:49.529" level="INFO">Clicking element 'xpath://span[@id='workWithPortalCopyLabel']'.</msg>
+<status status="PASS" endtime="20190908 22:40:50.136" starttime="20190908 22:40:49.528"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://div[@id='workWithPortalCopyMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:40:50.338" starttime="20190908 22:40:50.136"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='workWithPortalCopyMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]</arg>
+</arguments>
+<msg timestamp="20190908 22:40:50.339" level="INFO">Clicking element 'xpath://div[@id='workWithPortalCopyMenu']//a[@name='networklogin'][contains(text(),'Log in to Community as User')]'.</msg>
+<status status="PASS" endtime="20190908 22:40:51.201" starttime="20190908 22:40:50.338"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190908 22:40:54.202" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190908 22:40:54.202" starttime="20190908 22:40:51.201"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>xpath://select[@id='portalUserLoginAsSelect']</arg>
+<arg>Order Navigator</arg>
+</arguments>
+<msg timestamp="20190908 22:40:54.203" level="INFO">Selecting options from selection list 'xpath://select[@id='portalUserLoginAsSelect']' by label Order Navigator.</msg>
+<status status="PASS" endtime="20190908 22:40:54.907" starttime="20190908 22:40:54.202"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@id='loginAsPortalUserOverlayDialog']//div[@class='middle']//input[1]</arg>
+</arguments>
+<msg timestamp="20190908 22:40:54.908" level="INFO">Clicking element 'xpath://div[@id='loginAsPortalUserOverlayDialog']//div[@class='middle']//input[1]'.</msg>
+<status status="PASS" endtime="20190908 22:40:59.543" starttime="20190908 22:40:54.907"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20190908 22:41:04.544" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190908 22:41:04.544" starttime="20190908 22:40:59.544"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${storefront}</arg>
+</arguments>
+<msg timestamp="20190908 22:41:04.545" level="INFO">Clicking link 'Ducted Residential &amp; Commercial Systems, Ductless Systems &amp; Source 1 Parts Store'.</msg>
+<status status="PASS" endtime="20190908 22:41:19.417" starttime="20190908 22:41:04.544"></status>
+</kw>
+<status status="PASS" endtime="20190908 22:41:19.418" starttime="20190908 22:40:13.336"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20190908 22:41:24.418" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190908 22:41:24.418" starttime="20190908 22:41:19.418"></status>
+</kw>
+<kw name="loopFOR" library="keywords_lib">
+<arguments>
+<arg>${element1}</arg>
+<arg>${locator_plp_upg}</arg>
+<arg>@{cat1}</arg>
+</arguments>
+<kw type="for" name="${subcat} IN [ @{cat} ]">
+<kw type="foritem" name="${subcat} = Controls and Accessories">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath:${element}</arg>
+<arg>timeout=20s</arg>
+</arguments>
+<status status="PASS" endtime="20190908 22:41:24.567" starttime="20190908 22:41:24.419"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>clicking ${subcat}</arg>
+</arguments>
+<msg timestamp="20190908 22:41:24.568" level="INFO">clicking Controls and Accessories</msg>
+<status status="PASS" endtime="20190908 22:41:24.568" starttime="20190908 22:41:24.567"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${element}</arg>
+</arguments>
+<msg timestamp="20190908 22:41:24.569" level="INFO">Clicking element 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<status status="PASS" endtime="20190908 22:41:25.064" starttime="20190908 22:41:24.569"></status>
+</kw>
+<kw name="retry_error" library="keywords_lib">
+<arguments>
+<arg>xpath:${element}</arg>
+</arguments>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Link</arg>
+<arg>${link}</arg>
+</arguments>
+<assign>
+<var>${error_retry}</var>
+</assign>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link}</arg>
+</arguments>
+<msg timestamp="20190908 22:41:25.067" level="INFO">Clicking link 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190908 22:41:26.050" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-1.png"&gt;&lt;img src="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190908 22:41:26.050" starttime="20190908 22:41:25.214"></status>
+</kw>
+<msg timestamp="20190908 22:41:26.054" level="FAIL">Link with locator 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i' not found.</msg>
+<status status="FAIL" endtime="20190908 22:41:26.054" starttime="20190908 22:41:25.066"></status>
+</kw>
+<msg timestamp="20190908 22:41:26.054" level="INFO">${error_retry} = ('FAIL', u'Link with locator \'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i\' not found.')</msg>
+<status status="PASS" endtime="20190908 22:41:26.054" starttime="20190908 22:41:25.066"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${error_retry}</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>5x</arg>
+<arg>10s</arg>
+<arg>Click Link</arg>
+<arg>${link}</arg>
+</arguments>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>10s</arg>
+<arg>Click Link</arg>
+<arg>${link}</arg>
+</arguments>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link}</arg>
+</arguments>
+<msg timestamp="20190908 22:41:26.060" level="INFO">Clicking link 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190908 22:41:26.712" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-2.png"&gt;&lt;img src="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190908 22:41:26.712" starttime="20190908 22:41:26.185"></status>
+</kw>
+<msg timestamp="20190908 22:41:26.713" level="FAIL">Link with locator 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i' not found.</msg>
+<status status="FAIL" endtime="20190908 22:41:26.714" starttime="20190908 22:41:26.059"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link}</arg>
+</arguments>
+<msg timestamp="20190908 22:41:36.715" level="INFO">Clicking link 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190908 22:41:37.291" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-3.png"&gt;&lt;img src="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190908 22:41:37.291" starttime="20190908 22:41:36.813"></status>
+</kw>
+<msg timestamp="20190908 22:41:37.293" level="FAIL">Link with locator 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i' not found.</msg>
+<status status="FAIL" endtime="20190908 22:41:37.293" starttime="20190908 22:41:36.714"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link}</arg>
+</arguments>
+<msg timestamp="20190908 22:41:47.294" level="INFO">Clicking link 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190908 22:41:47.899" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-4.png"&gt;&lt;img src="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190908 22:41:47.900" starttime="20190908 22:41:47.402"></status>
+</kw>
+<msg timestamp="20190908 22:41:47.901" level="FAIL">Link with locator 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i' not found.</msg>
+<status status="FAIL" endtime="20190908 22:41:47.901" starttime="20190908 22:41:47.293"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link}</arg>
+</arguments>
+<msg timestamp="20190908 22:41:57.902" level="INFO">Clicking link 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190908 22:41:58.547" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-5.png"&gt;&lt;img src="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190908 22:41:58.548" starttime="20190908 22:41:57.999"></status>
+</kw>
+<msg timestamp="20190908 22:41:58.549" level="FAIL">Link with locator 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i' not found.</msg>
+<status status="FAIL" endtime="20190908 22:41:58.549" starttime="20190908 22:41:57.901"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link}</arg>
+</arguments>
+<msg timestamp="20190908 22:42:08.550" level="INFO">Clicking link 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190908 22:42:09.151" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-6.png"&gt;&lt;img src="Suites.SFDCReg uat.reg_categorycheck_UPG_UAT-selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190908 22:42:09.152" starttime="20190908 22:42:08.670"></status>
+</kw>
+<msg timestamp="20190908 22:42:09.153" level="FAIL">Link with locator 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i' not found.</msg>
+<status status="FAIL" endtime="20190908 22:42:09.153" starttime="20190908 22:42:08.549"></status>
+</kw>
+<msg timestamp="20190908 22:42:09.154" level="FAIL">Keyword 'Click Link' failed after retrying 5 times. The last error was: Link with locator 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i' not found.</msg>
+<status status="FAIL" endtime="20190908 22:42:09.154" starttime="20190908 22:41:26.058"></status>
+</kw>
+<status status="FAIL" endtime="20190908 22:42:09.154" starttime="20190908 22:41:26.055"></status>
+</kw>
+<status status="FAIL" endtime="20190908 22:42:09.155" starttime="20190908 22:41:25.065"></status>
+</kw>
+<status status="FAIL" endtime="20190908 22:42:09.155" starttime="20190908 22:41:24.419"></status>
+</kw>
+<status status="FAIL" endtime="20190908 22:42:09.155" starttime="20190908 22:41:24.419"></status>
+</kw>
+<status status="FAIL" endtime="20190908 22:42:09.155" starttime="20190908 22:41:24.418"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190908 22:42:12.202" starttime="20190908 22:42:09.156"></status>
+</kw>
+<doc>Step1 -As a user logged in to UPG store
+Step2-User click on Catagory trees one by one
+Step3-User click on each Filters for PLP list items one by one</doc>
+<tags>
+<tag>uat</tag>
+<tag>UPG</tag>
+</tags>
+<status status="FAIL" endtime="20190908 22:42:12.203" critical="yes" starttime="20190908 22:40:13.334">Keyword 'Click Link' failed after retrying 5 times. The last error was: Link with locator 'xpath://*[@id="a8d4A0000008pOfQAI"]/h5/span/span/i' not found.</status>
+</test>
+<status status="FAIL" endtime="20190908 22:42:12.204" starttime="20190908 22:39:50.166"></status>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="FAIL" endtime="20190908 22:42:12.208" starttime="20190908 22:39:50.106"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">uat</stat>
+<stat fail="2" pass="0">UPG</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Suites" pass="0">Suites</stat>
+<stat fail="1" id="s1-s1" name="SFDCReg sit" pass="0">Suites.SFDCReg sit</stat>
+<stat fail="1" id="s1-s2" name="SFDCReg uat" pass="0">Suites.SFDCReg uat</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
