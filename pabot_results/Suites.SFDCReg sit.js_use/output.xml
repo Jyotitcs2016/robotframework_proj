@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190909 15:11:57.147" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<suite id="s1" name="Suites">
+<suite source="C:\Users\jp1\.jenkins\workspace\Robot_Framework\SFDCReg_sit.robot" id="s1-s1" name="SFDCReg sit">
+<kw type="setup" name="loginSFDC" library="keywords_lib">
+<arguments>
+<arg>${browser}</arg>
+<arg>${username}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190909 15:11:59.890" level="INFO">Opening browser 'gc' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190909 15:15:00.267" starttime="20190909 15:11:59.889"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190909 15:15:01.935" starttime="20190909 15:15:00.267"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20190909 15:15:02.239" starttime="20190909 15:15:01.936"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190909 15:15:02.240" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
+<status status="PASS" endtime="20190909 15:15:15.038" starttime="20190909 15:15:02.240"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190909 15:15:15.040" level="INFO">Typing password into text field 'css:input#password'.</msg>
+<status status="PASS" endtime="20190909 15:15:19.072" starttime="20190909 15:15:15.040"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is enabled.</doc>
+<arguments>
+<arg>css:input#Login</arg>
+</arguments>
+<status status="PASS" endtime="20190909 15:15:21.107" starttime="20190909 15:15:19.073"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#Login</arg>
+</arguments>
+<msg timestamp="20190909 15:15:21.108" level="INFO">Clicking button 'css:input#Login'.</msg>
+<status status="PASS" endtime="20190909 15:16:31.237" starttime="20190909 15:15:21.108"></status>
+</kw>
+<status status="PASS" endtime="20190909 15:16:31.238" starttime="20190909 15:11:59.887"></status>
+</kw>
+<test id="s1-s1-t1" name="js_use">
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<doc>Returns vertical position of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://img[@id='01aG0000001OjLJImg']</arg>
+</arguments>
+<assign>
+<var>${Get Vertical Position}</var>
+</assign>
+<msg timestamp="20190909 15:16:32.352" level="INFO">${Get Vertical Position} = 1105.0</msg>
+<status status="PASS" endtime="20190909 15:16:32.352" starttime="20190909 15:16:31.241"></status>
+</kw>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<doc>Returns horizontal position of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://img[@id='01aG0000001OjLJImg']</arg>
+</arguments>
+<assign>
+<var>${Get horizontal Position}</var>
+</assign>
+<msg timestamp="20190909 15:16:33.500" level="INFO">${Get horizontal Position} = 511.0</msg>
+<status status="PASS" endtime="20190909 15:16:33.500" starttime="20190909 15:16:32.353"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>vertical ${Get Vertical Position} pixels,horizon ${Get horizontal Position} pixels</arg>
+</arguments>
+<msg timestamp="20190909 15:16:33.502" level="INFO">vertical 1105.0 pixels,horizon 511.0 pixels</msg>
+<status status="PASS" endtime="20190909 15:16:33.503" starttime="20190909 15:16:33.501"></status>
+</kw>
+<kw name="js_script" library="keywords_lib">
+<arguments>
+<arg>(0,1500)</arg>
+</arguments>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollBy${scrolldown};</arg>
+</arguments>
+<msg timestamp="20190909 15:16:33.509" level="INFO">Executing JavaScript:
+window.scrollBy(0,1500);
+Without any arguments.</msg>
+<status status="PASS" endtime="20190909 15:16:34.089" starttime="20190909 15:16:33.504"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>scrolled</arg>
+</arguments>
+<msg timestamp="20190909 15:16:34.090" level="INFO">scrolled</msg>
+<status status="PASS" endtime="20190909 15:16:34.091" starttime="20190909 15:16:34.090"></status>
+</kw>
+<status status="PASS" endtime="20190909 15:16:34.092" starttime="20190909 15:16:33.503"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20190909 15:16:39.094" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190909 15:16:39.094" starttime="20190909 15:16:34.092"></status>
+</kw>
+<kw name="Set Screenshot Directory" library="Screenshot">
+<doc>Sets the directory where screenshots are saved.</doc>
+<msg timestamp="20190909 15:16:39.096" level="FAIL">Keyword 'Screenshot.Set Screenshot Directory' expected 1 argument, got 0.</msg>
+<status status="FAIL" endtime="20190909 15:16:39.096" starttime="20190909 15:16:39.095"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190909 15:17:24.233" starttime="20190909 15:16:39.097"></status>
+</kw>
+<status status="FAIL" endtime="20190909 15:17:24.234" critical="yes" starttime="20190909 15:16:31.239">Keyword 'Screenshot.Set Screenshot Directory' expected 1 argument, got 0.</status>
+</test>
+<doc>SFDC Regression</doc>
+<status status="FAIL" endtime="20190909 15:17:24.237" starttime="20190909 15:11:57.391"></status>
+</suite>
+<status status="FAIL" endtime="20190909 15:17:24.244" starttime="20190909 15:11:57.158"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Suites" pass="0">Suites</stat>
+<stat fail="1" id="s1-s1" name="SFDCReg sit" pass="0">Suites.SFDCReg sit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190902 21:54:47.911" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<suite source="C:\Users\jp1\.jenkins\workspace\Robot_Framework\SFDC_Reg.robot" id="s1" name="SFDC Reg">
+<kw type="setup" name="loginSFDC">
+<arguments>
+<arg>gc</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<status status="FAIL" endtime="20190902 21:54:57.349" starttime="20190902 21:54:57.339"></status>
+</kw>
+<status status="FAIL" endtime="20190902 21:54:57.350" starttime="20190902 21:54:57.338"></status>
+</kw>
+<test id="s1-t1" name="reg_categorycheck_UPG">
+<doc>Step1 -As a user logged in to UPG store
+Step2-User click on Catagory trees one by one
+Step3-User click on each Filters for PLP list items one by one</doc>
+<tags>
+<tag>robot:exit</tag>
+<tag>UPG</tag>
+</tags>
+<status status="FAIL" endtime="20190902 21:54:57.353" critical="yes" starttime="20190902 21:54:57.350">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t2" name="reg_categorycheck_Controls">
+<doc>Step1 -As a user logged in to Controls store
+Step2-User click on Catagory trees one by one
+Step3-User click on each Filters for PLP list items one by one</doc>
+<tags>
+<tag>controls</tag>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190902 21:54:57.357" critical="yes" starttime="20190902 21:54:57.355">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t3" name="js_use">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190902 21:54:57.361" critical="yes" starttime="20190902 21:54:57.359">Test execution stopped due to a fatal error.</status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190902 21:54:57.375" starttime="20190902 21:54:57.374"></status>
+</kw>
+<doc>SFDC Regression</doc>
+<status status="FAIL" endtime="20190902 21:54:57.375" starttime="20190902 21:54:47.918">Suite setup failed:
+Execution terminated by signal</status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="0">Critical Tests</stat>
+<stat fail="3" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat info="combined" fail="0" combined="NOT robot:exit" pass="0">NOT robot:exit</stat>
+<stat fail="1" pass="0">controls</stat>
+<stat fail="3" pass="0">robot:exit</stat>
+<stat fail="1" pass="0">UPG</stat>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="SFDC Reg" pass="0">SFDC Reg</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

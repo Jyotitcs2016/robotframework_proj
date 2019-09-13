@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190829 21:35:21.760" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<suite source="C:\Users\jp1\.jenkins\workspace\Robot_Framework\SFDC_Reg.robot" id="s1" name="SFDC Reg">
+<kw type="setup" name="loginSFDC">
+<arguments>
+<arg>ie</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://test.salesforce.com</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190829 21:35:22.258" level="INFO">Opening browser 'ie' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190829 21:35:28.224" starttime="20190829 21:35:22.257"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190829 21:35:28.240" starttime="20190829 21:35:28.225"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20190829 21:35:28.256" starttime="20190829 21:35:28.240"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#username</arg>
+<arg>jyotiprakash.panda-ext@jci.com</arg>
+</arguments>
+<msg timestamp="20190829 21:35:28.257" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190829 21:36:43.368" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-59.png"&gt;&lt;img src="selenium-screenshot-59.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190829 21:36:43.368" starttime="20190829 21:35:48.407"></status>
+</kw>
+<msg timestamp="20190829 21:36:43.373" level="FAIL">Element with locator 'css:input#username' not found.</msg>
+<status status="FAIL" endtime="20190829 21:36:43.373" starttime="20190829 21:35:28.256"></status>
+</kw>
+<status status="FAIL" endtime="20190829 21:36:43.374" starttime="20190829 21:35:22.257"></status>
+</kw>
+<test id="s1-t1" name="reg_categorycheck_UPG">
+<tags>
+<tag>UPG</tag>
+</tags>
+<status status="FAIL" endtime="20190829 21:36:43.376" critical="yes" starttime="20190829 21:36:43.374">Parent suite setup failed:
+Element with locator 'css:input#username' not found.</status>
+</test>
+<test id="s1-t2" name="reg_categorycheck_Controls">
+<tags>
+<tag>controls</tag>
+</tags>
+<status status="FAIL" endtime="20190829 21:36:43.380" critical="yes" starttime="20190829 21:36:43.378">Parent suite setup failed:
+Element with locator 'css:input#username' not found.</status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190829 21:36:46.414" starttime="20190829 21:36:43.381"></status>
+</kw>
+<status status="FAIL" endtime="20190829 21:36:46.414" starttime="20190829 21:35:21.766">Suite setup failed:
+Element with locator 'css:input#username' not found.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">controls</stat>
+<stat fail="1" pass="0">UPG</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="SFDC Reg" pass="0">SFDC Reg</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

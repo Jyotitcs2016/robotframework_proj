@@ -56,3 +56,6 @@ ${ch_id8}         //*[@id="a8dG0000000KylnIAC"]/h5/span/span/i
 ...               NamePlates    PM Kits    # General
 ${locator_plp_upg}    xpath://div[@class="panel-body cc_body"]/h4
 ${browser}        gc
+@{orderids-uat}    1506117    1506117    1506117    1506117    1506117    1506117    1506117
+...               1506117    1506117    1506117
+@{orderids-uat_sp}    1528617    1506690

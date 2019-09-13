@@ -21,4 +21,20 @@ reg_categorycheck_UPG_UAT
     loopFOR    ${element4}    ${locator_plp_upg}    @{cat4}
     [Teardown]    Close Browser
 
+mass_order_uat
+    loginStorefront    Ducted Residential & Commercial Systems, Ductless Systems & Source 1 Parts Store    Dellinger, Shiloh    D
+    : FOR    ${ORDER}    IN    @{orderids-uat}
+    \    Page Should Contain    Order History    DEBUG
+    \    Sleep    10s
+    \    Reorder_cart    ${ORDER}
+    \    checkout_process
+    [Teardown]    Close Browser
+
+mass_order_uat_spencer
+    loginStorefront    Ducted Residential & Commercial Systems, Ductless Systems & Source 1 Parts Store    Clarey, Spencer    C
+    : FOR    ${INDEX}    IN RANGE    1    10
+    \    log    ${INDEX}
+    \    orders_inloop    @{orderids-uat_sp}
+    [Teardown]    Close Browser
+
 *** Keywords ***

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190829 21:31:14.135" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<suite source="C:\Users\jp1\.jenkins\workspace\Robot_Framework\SFDC_Reg.robot" id="s1" name="SFDC Reg">
+<kw type="setup" name="loginSFDC">
+<arguments>
+<arg>ie</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://test.salesforce.com</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190829 21:31:18.683" level="INFO">Opening browser 'ie' to base url 'https://test.salesforce.com'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190829 21:31:32.279" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20190829 21:31:32.279" starttime="20190829 21:31:32.279"></status>
+</kw>
+<msg timestamp="20190829 21:31:32.284" level="FAIL">WebDriverException: Message: Unexpected error launching Internet Explorer. Browser zoom level was set to 75%. It should be set to 100%
+</msg>
+<status status="FAIL" endtime="20190829 21:31:32.285" starttime="20190829 21:31:18.682"></status>
+</kw>
+<status status="FAIL" endtime="20190829 21:31:35.301" starttime="20190829 21:31:18.681"></status>
+</kw>
+<test id="s1-t1" name="reg_categorycheck_UPG">
+<tags>
+<tag>UPG</tag>
+</tags>
+<status status="FAIL" endtime="20190829 21:31:35.303" critical="yes" starttime="20190829 21:31:35.302">Parent suite setup failed:
+WebDriverException: Message: Unexpected error launching Internet Explorer. Browser zoom level was set to 75%. It should be set to 100%
+</status>
+</test>
+<test id="s1-t2" name="reg_categorycheck_Controls">
+<tags>
+<tag>controls</tag>
+</tags>
+<status status="FAIL" endtime="20190829 21:31:35.305" critical="yes" starttime="20190829 21:31:35.304">Parent suite setup failed:
+WebDriverException: Message: Unexpected error launching Internet Explorer. Browser zoom level was set to 75%. It should be set to 100%
+</status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190829 21:31:35.306" starttime="20190829 21:31:35.306"></status>
+</kw>
+<status status="FAIL" endtime="20190829 21:31:35.307" starttime="20190829 21:31:14.141">Suite setup failed:
+WebDriverException: Message: Unexpected error launching Internet Explorer. Browser zoom level was set to 75%. It should be set to 100%
+</status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">controls</stat>
+<stat fail="1" pass="0">UPG</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="SFDC Reg" pass="0">SFDC Reg</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

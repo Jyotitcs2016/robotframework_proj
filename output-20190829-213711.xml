@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190829 21:37:11.867" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<suite source="C:\Users\jp1\.jenkins\workspace\Robot_Framework\SFDC_Reg.robot" id="s1" name="SFDC Reg">
+<kw type="setup" name="loginSFDC">
+<arguments>
+<arg>ie</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://test.salesforce.com</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190829 21:37:12.413" level="INFO">Opening browser 'ie' to base url 'https://test.salesforce.com'.</msg>
+<status status="PASS" endtime="20190829 21:37:24.824" starttime="20190829 21:37:12.412"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190829 21:37:24.839" starttime="20190829 21:37:24.824"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20190829 21:37:24.844" starttime="20190829 21:37:24.839"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:input#username</arg>
+<arg>jyotiprakash.panda-ext@jci.com</arg>
+</arguments>
+<msg timestamp="20190829 21:37:24.845" level="INFO">Typing text 'jyotiprakash.panda-ext@jci.com' into text field 'css:input#username'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190829 21:37:45.000" level="FAIL">NoSuchWindowException: Message: Unable to get browser
+</msg>
+<status status="FAIL" endtime="20190829 21:37:45.000" starttime="20190829 21:37:44.939"></status>
+</kw>
+<msg timestamp="20190829 21:37:45.000" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: Unable to get browser
+</msg>
+<msg timestamp="20190829 21:37:45.003" level="FAIL">Element with locator 'css:input#username' not found.</msg>
+<status status="FAIL" endtime="20190829 21:37:45.003" starttime="20190829 21:37:24.844"></status>
+</kw>
+<status status="FAIL" endtime="20190829 21:37:45.004" starttime="20190829 21:37:12.412"></status>
+</kw>
+<test id="s1-t1" name="reg_categorycheck_UPG">
+<tags>
+<tag>UPG</tag>
+</tags>
+<status status="FAIL" endtime="20190829 21:37:45.005" critical="yes" starttime="20190829 21:37:45.004">Parent suite setup failed:
+Element with locator 'css:input#username' not found.</status>
+</test>
+<test id="s1-t2" name="reg_categorycheck_Controls">
+<tags>
+<tag>controls</tag>
+</tags>
+<status status="FAIL" endtime="20190829 21:37:45.007" critical="yes" starttime="20190829 21:37:45.006">Parent suite setup failed:
+Element with locator 'css:input#username' not found.</status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190829 21:37:48.204" starttime="20190829 21:37:45.009"></status>
+</kw>
+<status status="FAIL" endtime="20190829 21:37:48.205" starttime="20190829 21:37:11.873">Suite setup failed:
+Element with locator 'css:input#username' not found.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">controls</stat>
+<stat fail="1" pass="0">UPG</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="SFDC Reg" pass="0">SFDC Reg</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190829 21:37:45.000" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: Unable to get browser
+</msg>
+</errors>
+</robot>

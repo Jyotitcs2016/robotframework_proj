@@ -1,0 +1,17 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.SFDCReg sit :: SFDC Regression                                         
+==============================================================================
+reg_categorycheck_Chiller                                             | FAIL |
+Evaluating expression '('PASS', None)='FAIL'' failed: SyntaxError: invalid syntax (<string>, line 1)
+------------------------------------------------------------------------------
+Suites.SFDCReg sit :: SFDC Regression                                 | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\jp1\.jenkins\workspace\Robot_Framework\pabot_results\Suites.SFDCReg sit.reg_categorycheck_Chiller\output.xml

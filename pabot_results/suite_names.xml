@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190908 22:42:15.392" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
+<robot rpa="false" generated="20190909 15:11:48.533" generator="Robot 3.1.1 (Python 2.7.14 on win32)">
 <suite id="s1" name="Suites">
-<suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot" id="s1-s1" name="SFDCReg sit">
+<suite source="C:\Users\jp1\.jenkins\workspace\Robot_Framework\SFDCReg_sit.robot" id="s1-s1" name="SFDCReg sit">
 <kw type="setup" name="loginSFDC" library="keywords_lib">
 <arguments>
 <arg>${browser}</arg>
@@ -9,29 +9,29 @@
 </arguments>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190908 22:42:15.936" starttime="20190908 22:42:15.935"></status>
+<status status="NOT_RUN" endtime="20190909 15:11:54.181" starttime="20190909 15:11:54.181"></status>
 </kw>
-<status status="PASS" endtime="20190908 22:42:15.936" starttime="20190908 22:42:15.934"></status>
+<status status="PASS" endtime="20190909 15:11:54.182" starttime="20190909 15:11:54.180"></status>
 </kw>
 <test id="s1-s1-t1" name="reg_categorycheck_UPG">
 <kw type="setup" name="Set Screenshot Directory" library="Screenshot">
 <doc>Sets the directory where screenshots are saved.</doc>
 <arguments>
-<arg>C:\\Users\\JPP\\Documents\\Testing\\Robot/screenshots</arg>
+<arg>C:\\Users\\jp1\\.jenkins\\workspace\\Robot_Framework/screenshots</arg>
 </arguments>
-<status status="NOT_RUN" endtime="20190908 22:42:15.938" starttime="20190908 22:42:15.937"></status>
+<status status="NOT_RUN" endtime="20190909 15:11:54.184" starttime="20190909 15:11:54.184"></status>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190908 22:42:15.938" starttime="20190908 22:42:15.938"></status>
+<status status="NOT_RUN" endtime="20190909 15:11:54.185" starttime="20190909 15:11:54.185"></status>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190908 22:42:15.939" starttime="20190908 22:42:15.938"></status>
+<status status="NOT_RUN" endtime="20190909 15:11:54.186" starttime="20190909 15:11:54.186"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT_RUN" endtime="20190908 22:42:15.939" starttime="20190908 22:42:15.939"></status>
+<status status="NOT_RUN" endtime="20190909 15:11:54.186" starttime="20190909 15:11:54.186"></status>
 </kw>
 <doc>Step1 -As a user logged in to UPG store
 Step2-User click on Catagory trees one by one
@@ -39,12 +39,66 @@ Step3-User click on each Filters for PLP list items one by one</doc>
 <tags>
 <tag>UPG</tag>
 </tags>
-<status status="PASS" endtime="20190908 22:42:15.939" critical="yes" starttime="20190908 22:42:15.936"></status>
+<status status="PASS" endtime="20190909 15:11:54.187" critical="yes" starttime="20190909 15:11:54.182"></status>
+</test>
+<test id="s1-s1-t2" name="reg_categorycheck_Controls">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190909 15:11:54.191" starttime="20190909 15:11:54.191"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190909 15:11:54.192" starttime="20190909 15:11:54.191"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20190909 15:11:54.192" starttime="20190909 15:11:54.192"></status>
+</kw>
+<doc>Step1 -As a user logged in to Controls store
+Step2-User click on Catagory trees one by one
+Step3-User click on each Filters for PLP list items one by one</doc>
+<tags>
+<tag>controls</tag>
+</tags>
+<status status="PASS" endtime="20190909 15:11:54.192" critical="yes" starttime="20190909 15:11:54.189"></status>
+</test>
+<test id="s1-s1-t3" name="js_use">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190909 15:11:54.195" starttime="20190909 15:11:54.195"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190909 15:11:54.196" starttime="20190909 15:11:54.195"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20190909 15:11:54.197" starttime="20190909 15:11:54.196"></status>
+</kw>
+<status status="PASS" endtime="20190909 15:11:54.197" critical="yes" starttime="20190909 15:11:54.194"></status>
+</test>
+<test id="s1-s1-t4" name="reg_categorycheck_Chiller">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190909 15:11:54.199" starttime="20190909 15:11:54.199"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20190909 15:11:54.200" starttime="20190909 15:11:54.200"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20190909 15:11:54.201" starttime="20190909 15:11:54.201"></status>
+</kw>
+<tags>
+<tag>Chiller</tag>
+</tags>
+<status status="PASS" endtime="20190909 15:11:54.201" critical="yes" starttime="20190909 15:11:54.198"></status>
 </test>
 <doc>SFDC Regression</doc>
-<status status="PASS" endtime="20190908 22:42:15.940" starttime="20190908 22:42:15.441"></status>
+<status status="PASS" endtime="20190909 15:11:54.202" starttime="20190909 15:11:48.746"></status>
 </suite>
-<suite source="C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot" id="s1-s2" name="SFDCReg uat">
+<suite source="C:\Users\jp1\.jenkins\workspace\Robot_Framework\SFDCReg_uat.robot" id="s1-s2" name="SFDCReg uat">
 <kw type="setup" name="loginSFDC" library="keywords_lib">
 <arguments>
 <arg>${browser}</arg>
@@ -52,22 +106,22 @@ Step3-User click on each Filters for PLP list items one by one</doc>
 </arguments>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190908 22:42:15.957" starttime="20190908 22:42:15.957"></status>
+<status status="NOT_RUN" endtime="20190909 15:11:54.227" starttime="20190909 15:11:54.227"></status>
 </kw>
-<status status="PASS" endtime="20190908 22:42:15.957" starttime="20190908 22:42:15.956"></status>
+<status status="PASS" endtime="20190909 15:11:54.227" starttime="20190909 15:11:54.226"></status>
 </kw>
 <test id="s1-s2-t1" name="reg_categorycheck_UPG_UAT">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190908 22:42:15.959" starttime="20190908 22:42:15.959"></status>
+<status status="NOT_RUN" endtime="20190909 15:11:54.229" starttime="20190909 15:11:54.229"></status>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190908 22:42:15.959" starttime="20190908 22:42:15.959"></status>
+<status status="NOT_RUN" endtime="20190909 15:11:54.230" starttime="20190909 15:11:54.230"></status>
 </kw>
 <kw type="teardown" name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT_RUN" endtime="20190908 22:42:15.960" starttime="20190908 22:42:15.960"></status>
+<status status="NOT_RUN" endtime="20190909 15:11:54.231" starttime="20190909 15:11:54.230"></status>
 </kw>
 <doc>Step1 -As a user logged in to UPG store
 Step2-User click on Catagory trees one by one
@@ -76,30 +130,32 @@ Step3-User click on each Filters for PLP list items one by one</doc>
 <tag>uat</tag>
 <tag>UPG</tag>
 </tags>
-<status status="PASS" endtime="20190908 22:42:15.960" critical="yes" starttime="20190908 22:42:15.957"></status>
+<status status="PASS" endtime="20190909 15:11:54.231" critical="yes" starttime="20190909 15:11:54.228"></status>
 </test>
-<status status="PASS" endtime="20190908 22:42:15.961" starttime="20190908 22:42:15.942"></status>
+<status status="PASS" endtime="20190909 15:11:54.232" starttime="20190909 15:11:54.207"></status>
 </suite>
-<status status="PASS" endtime="20190908 22:42:15.963" starttime="20190908 22:42:15.398"></status>
+<status status="PASS" endtime="20190909 15:11:54.236" starttime="20190909 15:11:48.539"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="2">Critical Tests</stat>
-<stat fail="0" pass="2">All Tests</stat>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
 </total>
 <tag>
+<stat fail="0" pass="1">Chiller</stat>
+<stat fail="0" pass="1">controls</stat>
 <stat fail="0" pass="1">uat</stat>
 <stat fail="0" pass="2">UPG</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Suites" pass="2">Suites</stat>
-<stat fail="0" id="s1-s1" name="SFDCReg sit" pass="1">Suites.SFDCReg sit</stat>
+<stat fail="0" id="s1" name="Suites" pass="5">Suites</stat>
+<stat fail="0" id="s1-s1" name="SFDCReg sit" pass="4">Suites.SFDCReg sit</stat>
 <stat fail="0" id="s1-s2" name="SFDCReg uat" pass="1">Suites.SFDCReg uat</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190908 22:42:15.375" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_sit.robot': Non-existing setting ''.</msg>
-<msg timestamp="20190908 22:42:15.381" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\SFDCReg_uat.robot': Non-existing setting ''.</msg>
-<msg timestamp="20190908 22:42:15.774" level="ERROR">Error in file 'C:\Users\JPP\Documents\Testing\Robot\locators_file.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190909 15:11:48.334" level="ERROR">Error in file 'C:\Users\jp1\.jenkins\workspace\Robot_Framework\SFDCReg_sit.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190909 15:11:48.341" level="ERROR">Error in file 'C:\Users\jp1\.jenkins\workspace\Robot_Framework\SFDCReg_uat.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190909 15:11:53.498" level="ERROR">Error in file 'C:\Users\jp1\.jenkins\workspace\Robot_Framework\locators_file.robot': Non-existing setting ''.</msg>
 </errors>
 </robot>

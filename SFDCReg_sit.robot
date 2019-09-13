@@ -48,4 +48,14 @@ reg_categorycheck_Chiller
     Check each category on store
     [Teardown]    Close Browser
 
+mass_order
+    [Tags]    massorder
+    loginStorefront    Ducted Residential & Commercial Systems, Ductless Systems & Source 1 Parts Store
+    : FOR    ${ORDER}    IN    @{orderids-uat}
+    \    Page Should Contain    Order History    DEBUG
+    \    Sleep    10s
+    \    Reorder_cart    ${ORDER}
+    \    checkout_process
+    [Teardown]    Close Browser
+
 *** Keywords ***

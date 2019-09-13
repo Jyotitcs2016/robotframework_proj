@@ -1,6 +1,9 @@
 datasources:6e88938a8af31cea90cd4a7becb5fc108da1b59a
-commandlineoptions:ca3e4a9d24019ecd1f3ec906b928ce8d1cbd5660
+commandlineoptions:690611fc3044860a7590e414b4bf0214ad18c978
 suitesfrom:no-suites-from-option
-file:5f5fd64929b7297e91b75272cb783f295fd384c1
---suite Suites.SFDCReg sit
---suite Suites.SFDCReg uat
+file:0d64622199bf4d3c51dcfc6aaf6b834414f63c36
+--test Suites.SFDCReg sit.reg_categorycheck_UPG
+--test Suites.SFDCReg sit.reg_categorycheck_Controls
+--test Suites.SFDCReg sit.js_use
+--test Suites.SFDCReg sit.reg_categorycheck_Chiller
+--test Suites.SFDCReg uat.reg_categorycheck_UPG_UAT
